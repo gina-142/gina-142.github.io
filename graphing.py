@@ -1,4 +1,4 @@
-# THE GRAPH IS CHATGPT GENERATED TO TEST IMPLEMENTING A GRAPH IN THE WESITE
+# THE GRAPH IS CHATGPT GENERATED TO TEST IMPLEMENTING A GRAPH IN THE WESITE i.e. won't actually be used
 
 import numpy as np
 import plotly.graph_objects as go
