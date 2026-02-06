@@ -4,12 +4,17 @@ fetch("page_data.json")
     .then(res => res.json())
     .then(data => {
         const timeline = document.getElementById("timeline");
-        console.log("Timeline div:", timeline);
 
         data.events.forEach(event => {
             const a = document.createElement("a");
-            a.href = event.href;
             a.className = "timeline_link";
+            a.dataset.caseType = event.case_type;
+
+            if (event.case_type == "major_study") {
+                a.href = event.href;
+            } else {
+                a.dataset.popup = event.href;
+            }
 
             const bubble = document.createElement("div");
             bubble.className = `bubble ${event.bubble_class}`;
@@ -21,7 +26,7 @@ fetch("page_data.json")
             content.setAttribute("role", "button");
 
             const title = document.createElement("h2");
-            title.textContent = event.year;
+            title.textContent = `${event.id} (${event.year})`;
 
             const body = document.createElement("p");
             body.textContent = event.text;
@@ -35,14 +40,27 @@ fetch("page_data.json")
     })
     .catch(err => console.error(err));
 
-const elements = document.querySelectorAll('[class="content"]');
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a.timeline_link');
 
-if (elements.length === 0) {
-    alert("Timeline button search failed.");
-} else {
-    elements.forEach(timeline_button => {
-        timeline_button.addEventListener('click', () => {
-            
-        })
-    });
-}
+    if (!link) return;
+
+    if (link.dataset.caseType == "minor_study") {
+        e.preventDefault();
+        const popupSelector = link.dataset.popup;
+        const modal = document.querySelector(popupSelector);
+        modal.style.display = 'block';
+
+        modal.querySelector('.close').onclick = () => {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    } else {
+        //window.location.assign(link.href);
+    }
+});

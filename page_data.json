@@ -1,11 +1,42 @@
 {
     "events" : [
         {
-            "id": "name1",
+            "id": "Content Name 1",
+            "case_type": "major_study",
             "href": "page1.html",
             "bubble_class": "left",
             "bubble_pos": "10px",
             "year": "1907",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+        },
+
+        {
+            "id": "Content Name 2",
+            "case_type": "minor_study",
+            "href": "#info1",
+            "bubble_class": "right",
+            "bubble_pos": "140px",
+            "year": "1923",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+        },
+
+        {
+            "id": "Content Name 3",
+            "case_type":  "major_study",
+            "href": "page1.html",
+            "bubble_class": "left",
+            "bubble_pos": "220px",
+            "year": "1946",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+        },
+
+        {
+            "id": "Star Trek",
+            "case_type":  "major_study",
+            "href": "page1.html",
+            "bubble_class": "right",
+            "bubble_pos": "380px",
+            "year": "1966",
             "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         }
     ]
