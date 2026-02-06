@@ -66,10 +66,19 @@ body {
 
 .bubble {
   position: absolute;
-  padding: 12px 12px;
-  border-radius: 20px;
+  padding: 0px 0px;
+  border-radius: 10px;
   background-color: transparent;
-  top: var(--bubble_pos)
+  top: var(--bubble_pos);
+}
+
+a[data-case-type="minor_study"] .bubble {
+  max-width: 350px;
+  border: 3px solid #00ff11;
+}
+
+a[data-case-type="major_study"] .bubble {
+  border: 5px solid #009dff;
 }
 
 .left {
@@ -86,9 +95,9 @@ body {
   content: " ";
   position: absolute;
   top: 50px;
-  width: 40px;
+  width: 27px;
   z-index: 1;
-  right: -20px;
+  right: -26px;
   border: 2px solid rgb(255, 255, 255);
 }
 
@@ -96,9 +105,9 @@ body {
   content: " ";
   position: absolute;
   top: 50px;
-  width: 40px;
+  width: 27px;
   z-index: 1;
-  left: -20px;
+  left: -22px;
   border: 2px solid rgb(255, 255, 255);
 }
 
