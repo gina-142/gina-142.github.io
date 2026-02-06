@@ -31,10 +31,18 @@ body {
 }
 
 #sidebar a {
-  padding: 5px 5px 20px 20px;
+  padding: 20px 5px 20px 20px;
   display: block;
   text-decoration: none;
   color: #ffffff;
+}
+
+#sidebar a.active {
+    background-color: #14a093;
+}
+
+#sidebar>a:hover:not(.active) {
+    background-color: #474e5d;
 }
 
 .timeline_link {
