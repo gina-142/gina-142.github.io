@@ -3,7 +3,7 @@
         {
             "id": "Content Name 1",
             "case_type": "major_study",
-            "href": "page1.html",
+            "href": "star_trek.html",
             "bubble_class": "left",
             "bubble_pos": "10px",
             "year": "1907",
@@ -23,7 +23,7 @@
         {
             "id": "Content Name 3",
             "case_type":  "major_study",
-            "href": "page1.html",
+            "href": "star_trek.html",
             "bubble_class": "left",
             "bubble_pos": "220px",
             "year": "1946",
@@ -33,7 +33,7 @@
         {
             "id": "Star Trek",
             "case_type":  "major_study",
-            "href": "page1.html",
+            "href": "star_trek.html",
             "bubble_class": "right",
             "bubble_pos": "380px",
             "year": "1966",
