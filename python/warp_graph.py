@@ -53,4 +53,5 @@ fig.update_layout(
     )
 )
 
-fig.show()
+fig.write_html("warp_drive_radius.html", include_plotlyjs="cdn")
+print("Saved warp_drive_slider.html")
