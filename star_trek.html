@@ -2,6 +2,23 @@
 <head>
   <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+
 </head>
 
 <body>
@@ -19,7 +36,14 @@
   <h1 id="title">Case Study 2: Star Trek</h1>
 
   <div id="main">
-    <p>Website content stuff.</p>
+    <p>Website content stuff.
+
+      The derivative is given by \( f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \)
+      
+    </p>
+
+    <p>This is inline math: $a^2 + b^2 = c^2$</p>
+
 
     <iframe src="warp_drive_radius.html" width="50%" height="700" style="border:none;"></iframe>
 
