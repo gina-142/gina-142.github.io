@@ -169,3 +169,12 @@ a[data-case-type="major_study"] .bubble {
 .close:hover {
   color: #000;
 }
+
+.big-quote {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 25px 60px;
+    line-height: 1.7;
+}
+<! -- added by Gussie --> 
