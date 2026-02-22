@@ -26,6 +26,20 @@ body {
   font-size: 1.6em;
 }
 
+#vernetitle {
+  position: fixed;
+  padding-left: 220px;
+  background-color: #4a2013;
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-top: 0;
+  padding-top: 30px;
+  z-index: 1;
+  font-size: 1.6em;
+}
+
+
 #sidebar {
   height: 100%;
   position: fixed;
@@ -33,6 +47,30 @@ body {
   padding-top: 90px;
   background-color: #6a879f;
 }
+#vernesidebar {
+  height: 100%;
+  position: fixed;
+  width: 200px;
+  padding-top: 90px;
+  background-color: #4a2013;
+}
+
+#vernesidebar a {
+  padding: 20px 5px 20px 20px;
+  display: block;
+  text-decoration: none;
+  color:  #4a2013;
+}
+
+#vernesidebar a.active {
+    background-color: #6b3322;
+}
+
+#vernesidebar>a:hover:not(.active) {
+    background-color: #4a2013;
+}
+
+
 
 #sidebar a {
   padding: 20px 5px 20px 20px;
