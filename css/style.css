@@ -59,7 +59,7 @@ body {
   padding: 20px 5px 20px 20px;
   display: block;
   text-decoration: none;
-  color:  #4a2013;
+  color:  #ffffff;
 }
 
 #vernesidebar a.active {
@@ -67,7 +67,7 @@ body {
 }
 
 #vernesidebar>a:hover:not(.active) {
-    background-color: #4a2013;
+    background-color: #6b3322;
 }
 
 
@@ -92,13 +92,13 @@ body {
 }
 
 
-.vernebody {
-  background-color: #b59991;
+body {
+  background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
 
-body {
-  background-color: #474e5d;
+.vernebody {
+  background-color: #b59991;
   font-family: Helvetica, sans-serif;
 }
 
