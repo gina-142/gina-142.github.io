@@ -250,9 +250,9 @@ a[data-case-type="major_study"] .bubble {
 }
 
 .center-image img {
-  max-width: 600px;   /* adjust size if you like */
-  width: 100%;
-  height: auto;
+  max-height: 600px;
+  width: auto;   /* adjust size if you like */
+  height: 100%;
   border-radius: 8px; /* optional, looks nice */
 }
 
