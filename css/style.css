@@ -5,15 +5,11 @@ body {
   margin: 0;
 }
 
-/* #main {
+#main {
   padding-top: 100px;
   padding-left: 230px;
-} */
+} 
 
-#main {
-  padding-top: 120px;  /* makes room for title + menu */
-  padding-left: 230px;
-}
 
 #title {
   position: fixed;
