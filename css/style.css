@@ -202,7 +202,7 @@ a[data-case-type="major_study"] .bubble {
 .section-menu {
     display: flex;
     position: fixed;
-    top: 90px;
+    top: 80px;
     left: 200px;
     width: calc(100% - 200px);   /* subtract sidebar width */
     z-index: 999;
