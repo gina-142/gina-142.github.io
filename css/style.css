@@ -261,3 +261,18 @@ a[data-case-type="major_study"] .bubble {
   font-size: 0.9em;
   color: #ffffff;
 }
+
+
+.image-row {
+  display: flex;
+  justify-content: center;  /* centers the whole group */
+  gap: 30px;                /* space between images */
+  margin: 40px 0;
+}
+
+.image-row img {
+  max-height: 600px;   /* control size */
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
+}
