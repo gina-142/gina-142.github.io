@@ -274,14 +274,14 @@ a[data-case-type="major_study"] .bubble {
     width: calc(100% - 200px);   /* subtract sidebar width */
     z-index: 999;
     background: #f4f4f4;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     box-sizing: border-box;
 }
 
 .section-menu a {
     flex: 1;       /* make all links equal width */
     min-width: 0;
-  /* padding: 15px 5px; /*   /* vertical + horizontal padding */
+    padding: 15px 5px;   /* vertical + horizontal padding */
     text-align: center;   /* center the text */
     text-decoration: none; 
     font-weight: bold;
