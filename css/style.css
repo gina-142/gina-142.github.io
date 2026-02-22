@@ -345,3 +345,78 @@ a[data-case-type="major_study"] .bubble {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* subtle shadow for depth */
   background-color: #f4e8de;
 }
+
+#warp_gifs img {
+  width: 500px;
+  height: 300px;
+}
+
+body.star-trek #title,
+body.star-trek #sidebar,
+body.star-trek #sidebar a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+.startrekheading {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+body.star-trek .section-menu a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+body.star-trek {
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111;
+}
+
+body.star-trek #main {
+    background-color: #1b3d80;
+    margin-left: 200px;
+    min-height: 100vh;
+    padding: 130px 30px 30px 30px;
+    color: white;           
+    font-family: 'Exo 2', sans-serif;
+}
+
+body.star-trek #sidebar {
+    background-color: #C0C0C0;
+    border-right: 3px solid #000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body.star-trek #sidebar a {
+    color: #000;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+body.star-trek #title {
+    background-color: #C0C0C0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #000;
+    box-shadow: none;
+}
+
+body.star-trek .section-menu a {
+    background: linear-gradient(to bottom, #d0d0d0, #a0a0a0);
+    border: 2px solid #000;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+body.star-trek .section-menu a + a {
+    border-left: 3px solid #000;
+}
+
+body.star-trek .section-menu a:hover {
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); 
+}

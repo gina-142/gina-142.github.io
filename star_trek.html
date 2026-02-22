@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
 
@@ -21,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="star-trek">
 
   <div id="sidebar">
     <a href="/index.html">Home Page</a>
@@ -33,16 +42,33 @@
     <a href="/references_page.html">References</a>
   </div>
 
-  <h1 id="title">Case Study 2: Star Trek</h1>
+  <h1 id="title">Case Study 2: <em>Star Trek</em> and the Warp Drive</h1>
 
   <div id="main">
+    <div class="section-menu">
+      <a href="star_trek.html">Star Trek: Alcubierre's Inspiration</a>
+      <a href="#">Faster than Light Travel</a>
+      <a href="#">(Almost) Reality: Alcubierre's Drive</a>
+      <a href="#">An Exotic Problem</a>
+    </div> 
+    <p style="font-size: 1.5em; text-align: left;" class="startrekheading">
+      <strong>Star Trek: Alcubierre's Inspiration</strong>
+    </p>
+
     <p>Website content stuff.
+
+      TEST TEST testing testing
 
       The derivative is given by \( f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} \)
       
     </p>
 
     <p>This is inline math: $a^2 + b^2 = c^2$</p>
+
+    <figure class="image-row" id="warp_gifs">
+      <img src="Star_Trek_Media/StarfieldSimulation004.gif" alt="Description 1">
+      <img src="Star_Trek_Media/WarpTrails001.gif" alt="Description 2">
+    </figure>
 
 
     <iframe src="warp_drive_radius.html" width="50%" height="700" style="border:none;"></iframe>
