@@ -185,21 +185,21 @@ a[data-case-type="major_study"] .bubble {
 
 .section-menu {
     display: flex;
+    flex-wrap: nowrap;  /* Prevent wrapping to next line */
     width: 100%;
     margin-bottom: 40px;
 }
 
 .section-menu a {
-    flex: 1;
-    display: block;                 /* important */
-    padding: 20px 0;
+    flex: 1 1 auto;       /* Allow equal width, but don't force wrapping */
+    padding: 10px 5px;    /* Reduce vertical padding */
     text-align: center;
     text-decoration: none !important;
     font-weight: bold;
-
     background: #f4f4f4;
     border: 2px solid black;
     color: black;
+    box-sizing: border-box; /* Make borders included in width */
 }
 
 
