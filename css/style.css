@@ -201,7 +201,7 @@ a[data-case-type="major_study"] .bubble {
 
 .section-menu a {
     flex: 1 1 auto;       /* make all links equal width */
-    padding: 15px 5px;    /* vertical + horizontal padding */
+    /* padding: 15px 5px; /*   /* vertical + horizontal padding */
     text-align: center;   /* center the text */
     text-decoration: none; 
     font-weight: bold;
