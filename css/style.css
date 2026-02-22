@@ -174,13 +174,29 @@ a[data-case-type="major_study"] .bubble {
   color: #000;
 }
 /* added by Gussie */
-.big-quote {
+/* .big-quote {
     font-weight: bold;
     font-style: italic;
     font-size: 0.9em;
     margin: 25px 60px;
     line-height: 1.7;
+} */
+
+.big-quote {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.7;
+
+    margin: 40px auto;        /* center the box */
+    padding: 25px 35px;       /* space inside box */
+
+    max-width: 800px;         /* keeps it readable */
+    background-color: #5a6f82; /* slightly lighter than page */
+    border-left: 6px solid #14a093;  /* accent bar */
+    border-radius: 8px;       /* soft corners */
 }
+
 
 .section-menu {
     display: flex;
