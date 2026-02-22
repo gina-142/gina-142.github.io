@@ -242,3 +242,22 @@ a[data-case-type="major_study"] .bubble {
 .section-menu a:hover {
     background-color: #555;
 }
+
+
+.center-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.center-image img {
+  max-width: 600px;   /* adjust size if you like */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional, looks nice */
+}
+
+.center-image figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
