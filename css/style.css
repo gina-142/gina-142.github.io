@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 60px;
   margin-top: 0;
-  padding-top: 20px;
+  padding-top: 30px;
   z-index: 1;
   font-size: 1.6em;
 }
@@ -204,7 +204,7 @@ a[data-case-type="major_study"] .bubble {
 .section-menu {
     display: flex;
     position: fixed;
-    top: 90px;
+    top: 80px;
     left: 200px;
     width: calc(100% - 200px);   /* subtract sidebar width */
     z-index: 999;
