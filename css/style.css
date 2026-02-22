@@ -5,8 +5,13 @@ body {
   margin: 0;
 }
 
-#main {
+/* #main {
   padding-top: 100px;
+  padding-left: 230px;
+} */
+
+#main {
+  padding-top: 170px;  /* makes room for title + menu */
   padding-left: 230px;
 }
 
@@ -169,7 +174,7 @@ a[data-case-type="major_study"] .bubble {
 .close:hover {
   color: #000;
 }
-<! -- added by Gussie --> 
+/* added by Gussie */
 .big-quote {
     font-weight: bold;
     font-style: italic;
@@ -180,9 +185,11 @@ a[data-case-type="major_study"] .bubble {
 
 .section-menu {
     display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 90px;                  /* sits below title */
+    left: 200px;                /* sits next to sidebar */
+    width: calc(100% - 200px);  /* full width minus sidebar */
+    z-index: 2;
 }
 
 .section-menu a {
@@ -198,18 +205,14 @@ a[data-case-type="major_study"] .bubble {
     color: black;
 }
 
+
+
 /* Prevent doubled borders */
 .section-menu a + a {
     border-left: none;
 }
 
-.section-menu a:hover {
-    background: #ddd;
-}
 
-.section-menu a:hover {
-    background-color: #e0e0e0;
-}
 
 
 .section-menu a:last-child {
