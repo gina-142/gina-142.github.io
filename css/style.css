@@ -186,22 +186,35 @@ a[data-case-type="major_study"] .bubble {
     margin-bottom: 40px;
 }
 
-.section-menu {
+/* .section-menu {
     display: flex;
     flex-wrap: nowrap;        /* Prevent wrapping */
-    position: fixed;          /* stay fixed below title */
-    top: 58px;                /* slightly above 60px to hug title */
-    left: 200px;              /* start after sidebar */
-    right: 0;                 /* stretch to right edge */
-    z-index: 999;             /* above content */
-    background: #f4f4f4;      /* menu background */
-    border-bottom: 2px solid black;
+/*    position: fixed;          /* stay fixed below title */
+/*    top: 58px;                /* slightly above 60px to hug title */
+/*    left: 200px;              /* start after sidebar */
+ /*   right: 0;                 /* stretch to right edge */
+ /*   z-index: 999;             /* above content */
+/*    background: #f4f4f4;      /* menu background */
+ /*   border-bottom: 2px solid black;
     box-sizing: border-box;   /* include borders in width */
+/*}*/
+
+.section-menu {
+    display: flex;
+    position: fixed;
+    top: 60px;
+    left: 200px;
+    width: calc(100% - 200px);   /* subtract sidebar width */
+    z-index: 999;
+    background: #f4f4f4;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
 }
 
 .section-menu a {
-    flex: 1 1 auto;       /* make all links equal width */
-    /* padding: 15px 5px; /*   /* vertical + horizontal padding */
+    flex: 1;       /* make all links equal width */
+    min-width: 0;
+  /* padding: 15px 5px; /*   /* vertical + horizontal padding */
     text-align: center;   /* center the text */
     text-decoration: none; 
     font-weight: bold;
