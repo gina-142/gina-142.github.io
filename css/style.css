@@ -185,11 +185,8 @@ a[data-case-type="major_study"] .bubble {
 
 .section-menu {
     display: flex;
-    position: fixed;
-    top: 90px;                  /* sits below title */
-    left: 200px;                /* sits next to sidebar */
-    width: calc(100% - 200px);  /* full width minus sidebar */
-    z-index: 2;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .section-menu a {
