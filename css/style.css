@@ -169,7 +169,7 @@ a[data-case-type="major_study"] .bubble {
 .close:hover {
   color: #000;
 }
-
+<! -- added by Gussie --> 
 .big-quote {
     font-weight: bold;
     font-style: italic;
@@ -177,4 +177,30 @@ a[data-case-type="major_study"] .bubble {
     margin: 25px 60px;
     line-height: 1.7;
 }
-<! -- added by Gussie --> 
+
+.section-menu {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.section-menu a {
+    flex: 1;                   
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    border-right: 1px solid #444;
+}
+
+
+.section-menu a:last-child {
+    border-right: none;
+}
+
+
+.section-menu a:hover {
+    background-color: #555;
+}
