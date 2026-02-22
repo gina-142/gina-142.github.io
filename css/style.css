@@ -38,6 +38,7 @@ body {
   z-index: 1;
   font-size: 1.6em;
   font-family: 'Antic Didone', serif;
+  font-weight: 700;
 }
 
 
@@ -48,6 +49,7 @@ body {
   padding-top: 90px;
   background-color: #6a879f;
   font-family: 'Antic Didone', serif;
+  font-weight: 700;
 }
 #vernesidebar {
   height: 100%;
@@ -102,6 +104,7 @@ body {
 .vernebody {
   background-color: #b59991;
   font-family: 'Antic Didone', serif;
+  font-weight: 500;
   color: #000000;
 }
 
