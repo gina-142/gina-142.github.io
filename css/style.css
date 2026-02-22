@@ -11,7 +11,7 @@ body {
 } */
 
 #main {
-  padding-top: 170px;  /* makes room for title + menu */
+  padding-top: 120px;  /* makes room for title + menu */
   padding-left: 230px;
 }
 
@@ -190,19 +190,30 @@ a[data-case-type="major_study"] .bubble {
     margin-bottom: 40px;
 }
 
-.section-menu a {
-    flex: 1 1 auto;       /* Allow equal width, but don't force wrapping */
-    padding: 10px 5px;    /* Reduce vertical padding */
-    text-align: center;
-    text-decoration: none !important;
-    font-weight: bold;
-    background: #f4f4f4;
-    border: 2px solid black;
-    color: black;
-    box-sizing: border-box; /* Make borders included in width */
+.section-menu {
+    display: flex;
+    flex-wrap: nowrap;        /* Prevent wrapping */
+    width: 100%;              /* full page width */
+    position: fixed;          /* stay fixed below title */
+    top: 60px;                /* height of the title bar */
+    left: 0;
+    z-index: 999;             /* above content */
+    background: #f4f4f4;      /* menu background */
+    border-bottom: 2px solid black;
+    box-sizing: border-box;   /* include borders in width */
 }
 
-
+.section-menu a {
+    flex: 1 1 auto;       /* make all links equal width */
+    padding: 15px 5px;    /* vertical + horizontal padding */
+    text-align: center;   /* center the text */
+    text-decoration: none; 
+    font-weight: bold;
+    background: #f4f4f4;  /* menu background */
+    border: 2px solid black; 
+    color: black;
+    box-sizing: border-box; /* include border in width */
+}
 
 /* Prevent doubled borders */
 .section-menu a + a {
