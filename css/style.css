@@ -193,10 +193,10 @@ a[data-case-type="major_study"] .bubble {
 .section-menu {
     display: flex;
     flex-wrap: nowrap;        /* Prevent wrapping */
-    width: 100%;              /* full page width */
     position: fixed;          /* stay fixed below title */
-    top: 60px;                /* height of the title bar */
-    left: 0;
+    top: 58px;                /* slightly above 60px to hug title */
+    left: 200px;              /* start after sidebar */
+    right: 0;                 /* stretch to right edge */
     z-index: 999;             /* above content */
     background: #f4f4f4;      /* menu background */
     border-bottom: 2px solid black;
