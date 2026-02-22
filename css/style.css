@@ -240,9 +240,9 @@ a[data-case-type="major_study"] .bubble {
     padding: 25px 35px;       /* space inside box */
 
     max-width: 800px;         /* keeps it readable */
-    background-color: #5a6f82; /* slightly lighter than page */
-    border-left: 6px solid #14a093;  /* accent bar */
-    border-radius: 8px;       /* soft corners */
+    background-color: #ffffff; /* slightly lighter than page */
+    border-left: 6px solid #4a2013;  /* accent bar */
+
 }
 
 
