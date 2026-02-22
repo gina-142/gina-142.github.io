@@ -324,7 +324,7 @@ a[data-case-type="major_study"] .bubble {
 .center-image figcaption {
   margin-top: 10px;
   font-size: 0.9em;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -339,5 +339,4 @@ a[data-case-type="major_study"] .bubble {
   max-height: 600px;   /* control size */
   width: auto;
   height: 100%;
-  border-radius: 8px;
 }
