@@ -92,7 +92,7 @@ body {
 }
 
 
-vernebody {
+.vernebody {
   background-color: #b59991;
   font-family: Helvetica, sans-serif;
 }
@@ -226,7 +226,7 @@ a[data-case-type="major_study"] .bubble {
     line-height: 1.7;
 } */
 
-.big-quote {
+.vernebody .big-quote {
     font-weight: bold;
     font-style: italic;
     font-size: 0.9em;
