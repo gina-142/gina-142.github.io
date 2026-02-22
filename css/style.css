@@ -235,7 +235,6 @@ a[data-case-type="major_study"] .bubble {
     font-style: italic;
     font-size: 0.9em;
     line-height: 1.7;
-    border: 3px solid #000000;
     margin: 40px auto;        /* center the box */
     padding: 25px 35px;       /* space inside box */
 
