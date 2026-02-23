@@ -481,3 +481,24 @@ body.interstellar .big-quote {
 body.star-trek .center-image figcaption {
   color: white;
 }
+/* Interstellar wormhole image */
+body.interstellar .interstellar-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+body.interstellar .interstellar-image img {
+  width: 70%;
+  max-width: 900px;
+  height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+body.interstellar .interstellar-image figcaption {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.9;
+}
