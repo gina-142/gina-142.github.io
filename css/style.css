@@ -469,3 +469,11 @@ body.interstellar .section-menu a + a {
 body.interstellar .section-menu a:hover {
     background: #ddd;
 }
+
+body.interstellar .big-quote {
+  border: 2px solid white;
+  padding: 20px 25px;
+  margin: 25px 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-style: normal;
+}
