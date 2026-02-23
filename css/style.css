@@ -477,3 +477,7 @@ body.interstellar .big-quote {
   background-color: rgba(255, 255, 255, 0.05);
   font-style: normal;
 }
+
+body.star-trek .center-image figcaption {
+  color: white;
+}
