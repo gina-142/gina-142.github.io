@@ -324,6 +324,31 @@ a[data-case-type="major_study"] .bubble {
   color: #000000;
 }
 
+.aacenter-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.aacenter-image img {
+  max-height: 600px;   /* control size */
+  width: auto;
+  height: 100%;
+  border: 3px double #2b1a14;      /* double line border, dark “ink” color */
+  border-radius: 6px;              /* slightly rounded corners */
+  padding: 4px;                     /* space between image and border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* subtle shadow for depth */
+  background-color: #f4e8de;
+}
+
+.aacenter-image figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+
+
+
 
 .image-row {
   display: flex;
