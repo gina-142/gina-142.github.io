@@ -502,3 +502,27 @@ body.interstellar .interstellar-image figcaption {
   color: #ffffff;
   opacity: 0.9;
 }
+/* Interstellar wormhole slider */
+body.interstellar .wormhole-slider-wrap {
+  margin: 50px auto;
+  text-align: center;
+}
+
+body.interstellar .wormhole-slider-wrap iframe {
+  width: 95%;
+  max-width: 1400px;
+  height: 800px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  background: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+
+body.interstellar .wormhole-slider-caption {
+  margin-top: 18px;
+  font-size: 1em;
+  color: #ffffff;
+  opacity: 0.9;
+}
