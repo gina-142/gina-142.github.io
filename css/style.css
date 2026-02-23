@@ -415,3 +415,57 @@ body.star-trek .section-menu a + a {
 body.star-trek .section-menu a:hover {
     background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); 
 }
+
+body.interstellar #title,
+body.interstellar #sidebar,
+body.interstellar #sidebar a,
+.interstellarheading,
+body.interstellar .section-menu a {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+
+body.interstellar {
+    background-color: #000;
+    background-image: url("../Star_Trek_Media/starfield2.png");
+    background-repeat: repeat;
+}
+
+body.interstellar #main {
+    margin-left: 200px;
+    min-height: 100vh;
+    padding: 130px 30px 30px 30px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body.interstellar #sidebar {
+    background-color: #fff;
+    color: #000;
+}
+
+body.interstellar #sidebar a {
+    color: #000;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+body.interstellar #title {
+    background-color: #fff;
+    color: #000;
+    box-shadow: none;
+}
+
+body.interstellar .section-menu a {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+body.interstellar .section-menu a + a {
+    border-left: 3px solid #000;
+}
+
+body.interstellar .section-menu a:hover {
+    background: #ddd;
+}

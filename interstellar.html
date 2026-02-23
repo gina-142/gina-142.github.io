@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+
   <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
 
@@ -19,8 +25,7 @@
   </script>
 </head>
 
-<body>
-
+<body class="interstellar">
   <div id="sidebar">
     <a href="/index.html">Home Page</a>
     <a href="/primers.html">Primers</a>
@@ -34,14 +39,55 @@
   <h1 id="title">Case Study 3: Interstellar</h1>
 
   <div id="main">
-    <p>
-        Page content
+    <div class="section-menu">
+      <a href="interstellar.html">Physics and Fiction</a>
+      <a href="#">The Worm Hole</a>
+    </div>
+    <p style="font-size: 1.8em; text-align: left;" class="interstellarheading">
+      <strong>The Warp Drive</strong>
     </p>
 
-    <iframe src="wormhole_slider.html" width="70%" height="700" style="border:none;"></iframe>
+    <p>
+        In the 2014 blockbuster Interstellar, humanity’s survival depends on travelling through a wormhole placed near Saturn, a shortcut through spacetime allowing Matthew McConaughey and his crew to travel millions of light years to another galaxy in seconds. Unlike previous science-fiction portals, this wormhole was not a product of pure imagination. Its appearance and behaviour were constrained by real physics and developed in consultation with physicist Kip Thorne1. The film was made to follow two rules:
+    </p>
+
+    <ul>
+      <li>No violation of established physical laws</li>
+      <li>All speculative elements must arise naturally from Einstein’s equations. </li>
+    </ul>
+
+    <p>
+      Those rules were not arbitrary. They were grounded in a century of physics that had already been exploring the strange possibilities hidden in Einstein’s equations. In 1915, Einstein’s theory of general relativity revealed gravity as the curvature of spacetime itself. In 1935, Einstein and Rosen found that the equations permitted “bridges” between distant regions, now known as Einstein-Rosen bridges, that were unstable and non-traversable. It was not until 1988 that Michael Morris and Kip Thorne showed that traversable wormholes were mathematically possible4, provided certain extreme conditions were met. As Thorne later explained in Black Holes and Time Warps, wormholes are not forbidden by Einstein’s theory, but they are tightly constrained by it.
+    </p>
+
+    <p>
+      Interstellar did not set out to imagine a shortcut through space. It set out to negotiate with the equations that describe it. 
+    </p>
+
+    <div style="
+        width:900px;
+        height:605px;
+        margin:auto;
+        background:white;
+        border-radius:15px;
+        overflow:hidden;
+    ">
+      <iframe 
+          src="wormhole_slider.html"
+          style="
+              width:100%;
+              height:600px;
+              border:5px solid #ffffff;
+              border-radius:15px;
+              overflow:hidden;
+          "
+          scrolling="no">
+      </iframe>
+    </div>
 
   </div>
 
   <script src="js/main_script.js"></script>
+  
 </body>
 </html>
