@@ -324,6 +324,31 @@ a[data-case-type="major_study"] .bubble {
   color: #000000;
 }
 
+.aacenter-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.aacenter-image img {
+  max-height: 600px;   /* control size */
+  width: auto;
+  height: 100%;
+  border: 3px double #2b1a14;      /* double line border, dark “ink” color */
+  border-radius: 6px;              /* slightly rounded corners */
+  padding: 4px;                     /* space between image and border */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* subtle shadow for depth */
+  background-color: #f4e8de;
+}
+
+.aacenter-image figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+
+
+
 
 .image-row {
   display: flex;
@@ -499,6 +524,30 @@ body.interstellar .interstellar-image img {
 body.interstellar .interstellar-image figcaption {
   margin-top: 12px;
   font-size: 0.9em;
+  color: #ffffff;
+  opacity: 0.9;
+}
+/* Interstellar wormhole slider */
+body.interstellar .wormhole-slider-wrap {
+  margin: 50px auto;
+  text-align: center;
+}
+
+body.interstellar .wormhole-slider-wrap iframe {
+  width: 95%;
+  max-width: 1400px;
+  height: 800px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  background: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+
+body.interstellar .wormhole-slider-caption {
+  margin-top: 18px;
+  font-size: 1em;
   color: #ffffff;
   opacity: 0.9;
 }
