@@ -20,7 +20,7 @@ def generateFrame(sigma, R, range_limit):
         x=x_values,
         y=y_values,
         colorscale='Inferno',
-        colorbar=dict(title='Value')
+        showscale=False
     )
 
 axis_range = 5
@@ -53,10 +53,9 @@ fig = go.Figure(
 sigma_slider = {
     "active": 0,
     "currentvalue": {"prefix": "Sigma: "},
-    "pad": {"t": 50},
     "steps": [
         {
-            "label": "",
+            "label": f"{sigma:.2f}",
             "method": "animate",
             "args": [
                 [f"sigma_{sigma:.2f}_R_{initial_R:.2f}"],
@@ -66,17 +65,21 @@ sigma_slider = {
         }
         for sigma in sigma_range
     ],
-    "font": {"size": 20, "family": "Arial", "color": "black"},
+    "x": 1.05,          # move right of plot
+    "y": 0.75,          # vertical position
+    "len": 0.4,         # slider length
+    "xanchor": "left",
+    "yanchor": "middle",
+    "pad": {"t": 0},
 }
 
 # R slider
 R_slider = {
     "active": 0,
     "currentvalue": {"prefix": "R: "},
-    "pad": {"t": 120},
     "steps": [
         {
-            "label": "",
+            "label": f"{R:.2f}",
             "method": "animate",
             "args": [
                 [f"sigma_{initial_sigma:.2f}_R_{R:.2f}"],
@@ -86,16 +89,19 @@ R_slider = {
         }
         for R in R_range
     ],
-    "font": {"size": 20, "family": "Arial", "color": "black"},
+    "x": 1.05,
+    "y": 0.25,
+    "len": 0.4,
+    "xanchor": "left",
+    "yanchor": "middle",
+    "pad": {"t": 0},
 }
 
 fig.update_layout(
     sliders=[sigma_slider, R_slider],
-    title="Heat Map",
     title_x=0.5,
-    autosize=False,        # prevents resize glitch
-    width=800,
-    height=800,
+    autosize=True,
+    margin=dict(l=20, r=20, t=40, b=20),
     xaxis=dict(
         title="x",
         range=[-axis_range, axis_range],
@@ -108,8 +114,17 @@ fig.update_layout(
     )
 )
 
-fig.show()
+fig.update_layout(
+    autosize=True,
+    margin=dict(l=20, r=150, t=40, b=0)
+)
 
-#fig.write_html("warp_drive_radius.html", include_plotlyjs="cdn")
-#print("Saved warp_drive_slider.html")
-fig.show()
+fig.write_html(
+    "warp_drive_radius.html",
+    full_html=True,
+    include_plotlyjs="cdn",
+    config={"responsive": True}
+)
+
+print("Saved warp_drive_slider.html")
+#fig.show()
