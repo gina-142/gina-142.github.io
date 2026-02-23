@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
   <title>Case Study 3: Interstellar</title>
   <link rel="stylesheet" href="css/style.css">
 
@@ -11,203 +18,64 @@
     }
   };
   </script>
-
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
 
-<body>
+<body class="vernebody">
 
-  <div id="sidebar">
+  <div id="vernesidebar">
     <a href="/index.html">Home Page</a>
     <a href="/primers.html">Primers</a>
     <a href="/jules_verne.html">Study 1: Jules Verne</a>
     <a href="/star_trek.html">Study 2: Star Trek</a>
-    <a href="/interstellar.html">Study 3: Interstellar</a>
+    <a href="#">Study 3: Interstellar</a>
     <a href="/ask_experts.html">Ask the Experts</a>
     <a href="/references_page.html">References</a>
   </div>
 
-  <h1 id="title">Case Study 3: Interstellar</h1>
+  <h1 id="vernetitle">Case Study 3: <em>Interstellar</em> and Wormholes</h1>
 
   <div id="main">
 
-    <!-- Section navigation (works even without extra CSS) -->
     <div class="section-menu">
-      <a href="#scenario">The Scenario</a>
-      <a href="#what-is">What Is a Wormhole?</a>
-      <a href="#geometry">Geometry and Cost</a>
-      <a href="#fiction">Physics and Fiction</a>
-      <a href="#bibliography">Bibliography</a>
+      <a href="interstellar.html">Synopsis</a>
+      <a href="interstellar_wormhole.html">What is a Wormhole?</a>
+      <a href="interstellar_geometry.html">Geometry and Cost</a>
+      <a href="interstellar_fiction.html">Physics and Fiction</a>
     </div>
 
-    
-    <h2 id="scenario">1. The Scenario: Survival Through a Wormhole</h2>
+    <p style="font-size: 1.8em; text-align: left;"><strong>The Scenario</strong></p>
 
     <p>
-      In the 2014 blockbuster <i>Interstellar</i>, humanity’s survival depends on travelling through a wormhole placed near Saturn,
+      In the 2014 blockbuster <em>Interstellar</em>, humanity’s survival depends on travelling through a wormhole placed near Saturn,
       a shortcut through spacetime allowing Matthew McConaughey and his crew to travel millions of light years to another galaxy in seconds.
       Unlike previous science-fiction portals, this wormhole was not a product of pure imagination. Its appearance and behaviour were constrained
-      by real physics and developed in consultation with physicist Kip Thorne<sup>1</sup>. The film was made to follow two rules:
+      by real physics and developed in consultation with physicist Kip Thorne<sup>1</sup>.
     </p>
 
-    <p>• No violation of established physical laws</p>
-    <p>• All speculative elements must arise naturally from Einstein’s equations</p>
+    <p>The film was made to follow two rules:</p>
+    <div class="big-quote">
+      <p>• No violation of established physical laws</p>
+      <p>• All speculative elements must arise naturally from Einstein’s equations</p>
+    </div>
 
     <p>
       Those rules were not arbitrary. They were grounded in a century of physics that had already been exploring the strange possibilities hidden in
       Einstein’s equations<sup>2</sup>. In 1915, Einstein’s theory of general relativity revealed gravity as the curvature of spacetime itself.
       In 1935, Einstein and Rosen found that the equations permitted “bridges” between distant regions, now known as Einstein–Rosen bridges<sup>3</sup>,
-      that were unstable and non-traversable. It was not until 1988 that Michael Morris and Kip Thorne showed that traversable wormholes were
-      mathematically possible<sup>4</sup>, provided certain extreme conditions were met. As Thorne later explained in <i>Black Holes and Time Warps</i>,
-      wormholes are not forbidden by Einstein’s theory, but they are tightly constrained by it<sup>5</sup>.
+      that were unstable and non-traversable. It was not until 1988 that Michael Morris and Kip Thorne showed that traversable wormholes were mathematically possible<sup>4</sup>,
+      provided certain extreme conditions were met. As Thorne later explained in <em>Black Holes and Time Warps</em>, wormholes are not forbidden by Einstein’s theory,
+      but they are tightly constrained by it<sup>5</sup>.
     </p>
 
     <p>
-      <i>Interstellar</i> did not set out to imagine a shortcut through space. It set out to negotiate with the equations that describe it.
+      <em>Interstellar</em> did not set out to imagine a shortcut through space. It set out to negotiate with the equations that describe it.
     </p>
 
-    <!-- 2 -->
-    <h2 id="what-is">2. What Is a Wormhole?</h2>
-
-    <p>
-      In general relativity, space and time form a four-dimensional geometry that can bend and stretch. A wormhole is a solution of Einstein’s field
-      equations in which two distant regions of this geometry become directly connected by a curved pathway.
-    </p>
-
-    <p>
-      If spacetime were imagined as a sheet, a wormhole would correspond to folding that sheet so that two distant points touch. The path through the fold
-      is shorter than the path across the surface itself. Crucially, this does not involve travelling faster through space. Instead, it changes the structure
-      of space itself, altering what “distance” means within the geometry.
-    </p>
-
-    <p>
-      An Einstein–Rosen bridge<sup>3</sup> is a mathematical solution in which two regions of spacetime are connected by such a bridge. However, the original
-      solution is not traversable: it would collapse too quickly for anything, even light, to pass through. A traversable wormhole is one that remains open
-      long enough for matter or signals to pass safely. Morris and Thorne’s 1988 work<sup>4</sup> showed that this was mathematically possible under certain
-      extreme physical conditions.
-    </p>
-
-    <p>
-      Contrary to the name, a wormhole would not appear as a swirling tunnel in space. From the outside, it would appear as a perfectly smooth sphere.
-      This is due to gravitational lensing: light from stars behind the wormhole bends around the curved spacetime surrounding it, wrapping the background
-      universe around its surface<sup>6</sup>.
-    </p>
-
-    <p>
-      In the film, the visual effects team calculated this bending using relativistic ray tracing in curved spacetime<sup>1</sup>. The resulting simulations
-      were so realistic that the work contributed to peer-reviewed research on visualising curved spacetime<sup>6</sup>.
-    </p>
-
-    <!-- Optional:  movie still  -->
-    <!--
-    <img src="images/interstellar_wormhole.jpg"
-         alt="The wormhole in Interstellar appears as a sphere due to gravitational lensing."
-         width="70%">
-    -->
-
-    <!-- 3 -->
-    <h2 id="geometry">3. The Geometry and the Cost</h2>
-
-    <h3>The Geometry Behind the Portal</h3>
-
-    <p>
-      The key physical parameter in the Morris–Thorne wormhole metric<sup>4</sup> is the <b>throat radius</b> — the minimum radial distance at which spacetime
-      flares outward rather than collapsing inward. In practical terms, the throat radius determines how “wide” the wormhole is at its narrowest point.
-    </p>
-
-    <p>
-      But this is not simply a geometric detail. The throat radius controls the strength of spacetime curvature, the magnitude of tidal forces experienced
-      by travellers, and the amount of exotic matter required to stabilise the structure.
-    </p>
-
-    <p>
-      The embedding diagram accompanying this section visualises this geometry directly. As the throat radius decreases, the curvature steepens dramatically.
-      These distortions are not cosmetic; they correspond to measurable physical consequences.
-    </p>
-
-    <!>
-    <iframe src="wormhole_slider.html" width="70%" height="700" style="border:none;"></iframe>
-
-    <h3>Throat Radius and Curvature</h3>
-
-    <p>
-      In general relativity, gravity is curvature. The sharper the curvature of spacetime, the stronger the gravitational effects experienced by objects
-      moving through it. A larger throat radius produces a gentler curvature profile. A smaller throat radius causes spacetime to bend far more abruptly<sup>4</sup>.
-      On the embedding diagram, this appears as a steepening of the surface as the radius decreases. The wormhole does not simply become narrower — it becomes
-      dynamically more extreme.
-    </p>
-
-    <h3>Tidal Acceleration</h3>
-
-    <p>
-      Tidal forces arise because different parts of an object experience slightly different gravitational pulls. Near a small wormhole throat, where curvature
-      changes rapidly across short distances, the difference in acceleration between the front and back of a spacecraft becomes dramatic<sup>4</sup>. Reducing the
-      throat radius therefore increases tidal stresses, while increasing the radius reduces them. The survivability of passage depends directly on the size of the throat.
-    </p>
-
-    <h3>Exotic Matter and Energy Conditions</h3>
-
-    <p>
-      A further consequence of reducing the throat radius is the increase in required negative energy density<sup>4</sup>. To prevent collapse, a traversable wormhole
-      must be supported by exotic matter — matter with negative energy density. In ordinary physics, energy density is positive: mass and radiation contribute positive
-      energy to spacetime curvature. Negative energy density would behave oppositely, producing a repulsive gravitational effect.
-    </p>
-
-    <p>
-      This violates the classical energy conditions — mathematical assumptions normally imposed to ensure gravity behaves in physically reasonable ways. As the throat radius
-      decreases, the amount of exotic matter required increases sharply. The energetic cost therefore follows directly from the geometry.
-    </p>
-
-    <p>
-      In recent years, wormholes have reappeared in theoretical discussions through the ER = EPR conjecture proposed by Maldacena and Susskind. “ER” refers to Einstein–Rosen
-      bridges, while “EPR” refers to quantum entanglement — a phenomenon in which two particles remain correlated across large distances. The conjecture suggests entangled
-      particles may be connected by microscopic, non-traversable wormholes. These do not permit travel, but they hint that wormhole-like geometries may be embedded in the
-      quantum structure of spacetime.
-    </p>
-
-    <p>
-      In <i>Interstellar</i>, the wormhole is large enough for safe passage<sup>1</sup>. The geometry does not forbid such a structure. It simply demands that its throat be
-      sufficiently wide — and that the energetic cost be paid.
-    </p>
-
-    <!-- 4 -->
-    <h2 id="fiction">4. Where Physics and Fiction Meet</h2>
-
-    <p>
-      Interstellar’s significance lies not only in what it shows on screen, but in where those ideas come from. The wormhole is not an invention of the film; it emerges
-      from a line of thinking that began with Einstein’s description of gravity<sup>2</sup>, continued through decades of theoretical work, and was developed more rigorously
-      by Morris and Thorne<sup>4</sup>. Rather than creating new physics for dramatic effect, the film adopted existing theory and accepted its constraints<sup>1</sup>.
-    </p>
-
-    <p>
-      The influence also moved in the opposite direction. In order to visualise curved spacetime accurately, the production relied on detailed relativistic calculations that
-      later formed the basis of published research<sup>6</sup>. The relationship between physics and fiction was therefore not one-sided. The theory shaped the story, and the
-      demands of the story required the theory to be expressed with unusual clarity.
-    </p>
-
-    <p>
-      Interstellar does not present a wormhole as effortless or inevitable. It presents it as something permitted by equations that have been tested, debated, and refined for
-      over a century. In doing so, it illustrates that scientific development and imagination are not opposing forces, but part of the same ongoing conversation — one in which
-      fiction can clarify theory just as theory constrains fiction.
-    </p>
-
-    <!-- Bibliography -->
-    <h2 id="bibliography">Bibliography</h2>
-    <p>1. Thorne, K. (2014) <i>The Science of Interstellar</i>. New York: W.W. Norton.</p>
-    <p>2. Einstein, A. (1915) ‘Die Feldgleichungen der Gravitation’, <i>Sitzungsberichte der Preussischen Akademie der Wissenschaften zu Berlin</i>, pp. 844–847.</p>
-    <p>3. Einstein, A. and Rosen, N. (1935) ‘The particle problem in the general theory of relativity’, <i>Physical Review</i>, 48(1), pp. 73–77.</p>
-    <p>4. Morris, M.S. and Thorne, K.S. (1988) ‘Wormholes in spacetime and their use for interstellar travel: A tool for teaching general relativity’,
-       <i>American Journal of Physics</i>, 56(5), pp. 395–412.</p>
-    <p>5. Thorne, K. (1994) <i>Black Holes and Time Warps: Einstein’s Outrageous Legacy</i>. New York: W.W. Norton.</p>
-    <p>6. James, O., von Tunzelmann, E., Franklin, P. and Thorne, K.S. (2015) ‘Gravitational lensing by spinning black holes in astrophysics and in the movie Interstellar’,
-       <i>Classical and Quantum Gravity</i>, 32(6), 065001.</p>
-
+    <script src="js/main_script.js"></script>
   </div>
-
-  <script src="js/main_script.js"></script>
 </body>
 </html>
