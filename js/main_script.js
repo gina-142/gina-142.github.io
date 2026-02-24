@@ -1,73 +1,97 @@
 console.log("JavaScript is connected!");
 
 fetch("page_data.json")
-    .then(res => res.json())
-    .then(data => {
+  .then(res => res.json())
+  .then(data => {
+    const timeline = document.getElementById("timeline");
+    const spacing = 70;
+    const sideOffset = 30;
 
-        const timeline = document.getElementById("timeline");
+    const bubbles = data.events.map((event, index) => {
+        const a = document.createElement("a");
+        a.className = "timeline_link";
+        a.dataset.caseType = event.case_type;
+        if(event.case_type === "major_study") {
+            a.href = event.href
+        } else {
+            a.dataset.popup = event.href;
+        }
 
-        let leftBottom = 0;
-        let rightBottom = 0;
-        const spacing = 70;
-        const sideOffset = 30;
+        const bubble = document.createElement("div");
+        bubble.className = `bubble ${index % 2 === 0 ? "left" : "right"}`;
 
-        data.events.forEach((event, index) => {
-            const a = document.createElement("a");
-            a.className = "timeline_link";
-            a.dataset.caseType = event.case_type;
+        const content = document.createElement("div");
+        content.className = "content";
 
-            if (event.case_type === "major_study") {
-                a.href = event.href;
-            } else {
-                a.dataset.popup = event.href;
-            }
+        const title = document.createElement("h2");
+        title.textContent = `${event.id} (${event.year})`;
+        content.appendChild(title);
 
-            const bubble = document.createElement("div");
-            const sideClass = index % 2 === 0 ? "left" : "right";
-            bubble.className = `bubble ${sideClass}`;
+        let data;
+        if(event.case_type === "major_study") {
+            data = document.createElement("p");
+            data.textContent = event.text;
+        } else {
+            data = document.createElement("img");
+            data.src = event.image;
+            data.style.borderRadius = "6px";
+            data.style.marginTop = "10px";
+        }
 
-            const content = document.createElement("div");
-            content.className = "content";
+        content.appendChild(data);
+        bubble.appendChild(content);
+        a.appendChild(bubble);
+        timeline.appendChild(a);
 
-            const title = document.createElement("h2");
-            title.textContent = `${event.id} (${event.year})`;
+      return bubble;
+    });
 
-            const body = document.createElement("p");
-            body.textContent = event.text;
+    const images = timeline.getElementsByTagName("img");
+    const totalImages = images.length;
+    if(totalImages === 0){
+      positionBubbles(bubbles);
+    } else {
+      let loadedCount = 0;
+      for(let img of images){
+        img.onload = img.onerror = () => {
+          loadedCount++;
+          if(loadedCount === totalImages){
+            positionBubbles(bubbles);
+          }
+        };
+      }
+    }
 
-            content.appendChild(title);
-            content.appendChild(body);
-            bubble.appendChild(content);
-            a.appendChild(bubble);
-            timeline.appendChild(a);
+    function positionBubbles(bubbles){
+      let leftBottom = 0;
+      let rightBottom = 0;
 
-            const bubbleRect = bubble.getBoundingClientRect();
-            const timelineRect = timeline.getBoundingClientRect();
-            const centerX = timelineRect.left + timelineRect.width / 2;
-            let topPosition;
+      bubbles.forEach(bubble => {
+        const sideClass = bubble.classList.contains("left") ? "left" : "right";
+        let top;
+        if(sideClass === "left"){
+          top = leftBottom;
+          bubble.style.top = `${top}px`;
+          leftBottom = top + bubble.offsetHeight + spacing;
+        } else {
+          top = rightBottom + sideOffset;
+          bubble.style.top = `${top}px`;
+          rightBottom = top + bubble.offsetHeight + spacing;
+        }
 
-            if (sideClass === "left") {
-                topPosition = leftBottom;
-                bubble.style.top = `${topPosition}px`;
-                const height = bubble.offsetHeight;
-                leftBottom = topPosition + height + spacing;
-                connectorWidth = centerX - bubbleRect.right;
-                bubble.style.setProperty('--connector-width', `${connectorWidth}px`);
+        const timelineRect = timeline.getBoundingClientRect();
+        const centerX = timelineRect.left + timelineRect.width / 2;
+        const bubbleRect = bubble.getBoundingClientRect();
+        let connectorWidth = sideClass === "left"
+          ? centerX - bubbleRect.right
+          : bubbleRect.left - centerX;
+        bubble.style.setProperty('--connector-width', `${connectorWidth}px`);
+      });
 
-            } else {
-                topPosition = rightBottom + sideOffset;
-                bubble.style.top = `${topPosition}px`;
-                const height = bubble.offsetHeight;
-                rightBottom = topPosition + height + spacing;
-                connectorWidth = bubbleRect.left - centerX;
-                bubble.style.setProperty('--connector-width', `${connectorWidth}px`);
-            }
-
-        });
-        timeline.style.height = `${Math.max(leftBottom, rightBottom)}px`;
-
-    })
-    .catch(err => console.error(err));
+      timeline.style.height = `${Math.max(leftBottom, rightBottom)}px`;
+    }
+  })
+  .catch(err => console.error(err));
 
 document.addEventListener('click', (e) => {
     const link = e.target.closest('a.timeline_link');

@@ -4,29 +4,17 @@
             "id": "From the Earth to the Moon",
             "case_type": "major_study",
             "href": "jules_verne.html",
-            "bubble_class": "left",
-            "bubble_pos": "10px",
             "year": "1865",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
-        },
-
-        {
-            "id": "Minor Study",
-            "case_type": "minor_study",
-            "href": "#info1",
-            "bubble_class": "right",
-            "bubble_pos": "140px",
-            "year": "1923",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+            "image": "Timeline_Images/Image_Placeholder.png",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         },
 
         {
             "id": "Lensman",
             "case_type": "minor_study",
             "href": "#info1",
-            "bubble_class": "left",
-            "bubble_pos": "250px",
             "year": "1934",
+            "image": "Timeline_Images/Image_Placeholder.png",
             "text": "Lensman was one of the first works of sci-fi to take place in an interstellar civilisation, setting the stage for the space operas of the mid-20th Century. In Lensman, inertialess drives allow spaceships to accelerate beyond light speed without worrying about the effects of relativity or even classical mechanics, enabling fast and easy travel across the galaxy as ships can accelerate and change direction instantly. This model of interstellar travel, defined not by constraint but by freedom, went on to become enormously influential on some of the most famous works of sci-fi, from Star Wars to Star Trek."
         },
 
@@ -34,9 +22,8 @@
             "id": "Dune",
             "case_type": "minor_study",
             "href": "#info1",
-            "bubble_class": "right",
-            "bubble_pos": "480px",
             "year": "1965",
+            "image": "Timeline_Images/Image_Placeholder.png",
             "text": "The enormous 'Heighliner' spaceships of Dune rely on a wormhole-style 'folding' of spacetime, instantaneously sending ships to their destination in another star system. Rather than relying on computers for navigation, human navigators must consume the Spice Melange to see into the future and predict a safe place to jump to."
         },
 
@@ -44,19 +31,17 @@
             "id": "Star Trek",
             "case_type":  "major_study",
             "href": "star_trek.html",
-            "bubble_class": "left",
-            "bubble_pos": "620px",
             "year": "1966",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+            "image": "Timeline_Images/Image_Placeholder.png",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         },
 
         {
             "id": "Stargate",
             "case_type": "minor_study",
             "href": "#info1",
-            "bubble_class": "right",
-            "bubble_pos": "770px",
             "year": "1994",
+            "image": "Timeline_Images/Image_Placeholder.png",
             "text": "In the Stargate universe, most interstellar travel takes place through the eponymous stargates, fixed wormholes just a few metres wide that allow for instantaneous travel from one place to another."
         },
 
@@ -64,19 +49,17 @@
             "id": "Interstellar",
             "case_type":  "major_study",
             "href": "interstellar.html",
-            "bubble_class": "left",
-            "bubble_pos": "890px",
             "year": "2014",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+            "image": "Timeline_Images/Image_Placeholder.png",
+            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor. Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         },
 
         {
             "id": "The Expanse",
             "case_type": "minor_study",
             "href": "#info1",
-            "bubble_class": "right",
-            "bubble_pos": "1050px",
             "year": "2016",
+            "image": "Timeline_Images/Image_Placeholder.png",
             "text": "Starting from a foundation of scientific realism, spaceships in the early series of The Expanse are propelled by a fusion propulsion drive called the Epstein Drive, the slow speed of which limits space travel to within the asteroid belt. However, the discovery of alien Ring Gates like those in the Stargate series allows ships to travel to other gates across the galaxy faster than light, through a hub known as the 'Slow Zone'."
         }
     ]

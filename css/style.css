@@ -71,8 +71,6 @@ body {
     background-color: #6b3322;
 }
 
-
-
 #sidebar a {
   padding: 20px 5px 20px 20px;
   display: block;
@@ -439,6 +437,15 @@ a[data-case-type="major_study"] .bubble {
 .right {
   left: 50%;
   margin-left: 20px;
+}
+
+.content img {
+  display: block;
+  max-width: 220px;
+  width: 90%;
+  height: auto;
+  margin: 15px auto 0;
+  border-radius: 6px;
 }
 
 /* Connector lines to the central spine */
