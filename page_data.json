@@ -45,7 +45,7 @@
             "case_type":  "major_study",
             "href": "star_trek.html",
             "bubble_class": "left",
-            "bubble_pos": "480px",
+            "bubble_pos": "500px",
             "year": "1966",
             "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         },
@@ -55,7 +55,7 @@
             "case_type": "minor_study",
             "href": "#info1",
             "bubble_class": "right",
-            "bubble_pos": "610px",
+            "bubble_pos": "630px",
             "year": "1994",
             "text": "In the Stargate universe, most interstellar travel takes place through the eponymous stargates, fixed wormholes just a few metres wide that allow for instantaneous travel from one place to another."
         },
@@ -65,7 +65,7 @@
             "case_type":  "major_study",
             "href": "interstellar.html",
             "bubble_class": "left",
-            "bubble_pos": "720px",
+            "bubble_pos": "750px",
             "year": "2014",
             "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
         }
