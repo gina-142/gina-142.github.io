@@ -31,13 +31,13 @@
         },
 
         {
-            "id": "Minor Study",
+            "id": "Dune",
             "case_type": "minor_study",
             "href": "#info1",
             "bubble_class": "right",
             "bubble_pos": "380px",
-            "year": "1955",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+            "year": "1965",
+            "text": "The enormous 'Heighliner' spaceships of Dune rely on a wormhole-style 'folding' of spacetime, instantaneously sending ships to their destination in another star system. Rather than relying on computers for navigation, human navigators must consume the Spice Melange to see into the future and predict a safe place to jump to."
         },
 
         {
@@ -45,19 +45,39 @@
             "case_type":  "major_study",
             "href": "star_trek.html",
             "bubble_class": "left",
-            "bubble_pos": "480px",
+            "bubble_pos": "520px",
             "year": "1966",
             "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+        },
+
+        {
+            "id": "Stargate",
+            "case_type": "minor_study",
+            "href": "#info1",
+            "bubble_class": "right",
+            "bubble_pos": "670px",
+            "year": "1994",
+            "text": "In the Stargate universe, most interstellar travel takes place through the eponymous stargates, fixed wormholes just a few metres wide that allow for instantaneous travel from one place to another."
         },
 
         {
             "id": "Interstellar",
             "case_type":  "major_study",
             "href": "interstellar.html",
-            "bubble_class": "right",
-            "bubble_pos": "620px",
+            "bubble_class": "left",
+            "bubble_pos": "790px",
             "year": "2014",
             "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+        },
+
+        {
+            "id": "The Expanse",
+            "case_type": "minor_study",
+            "href": "#info1",
+            "bubble_class": "right",
+            "bubble_pos": "920px",
+            "year": "2016",
+            "text": "Starting from a foundation of scientific realism, spaceships in the early series of The Expanse are propelled by a fusion propulsion drive called the Epstein Drive, the slow speed of which limits space travel to within the asteroid belt. However, the discovery of alien Ring Gates like those in the Stargate series allows ships to travel to other gates across the galaxy faster than light, through a hub known as the 'Slow Zone'"
         }
     ]
 }

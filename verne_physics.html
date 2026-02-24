@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
   <title>My Website</title>
   <link rel="stylesheet" href="css/style.css">
@@ -64,29 +64,29 @@
   principles of firing a cannon [1] , which broadly apply from medieval smoothbore guns 
   to the highly powered artillery of the American Civil War, the backdrop to From the Earth to the Moon.</p>
 <p>1.	Loading the cannon </p>
-<p style="text-indent: 40px;">The cannon is, in effect, a hollow metal cylinder. The projectile – a cannonball or
+<p style="padding-left: 40px;">The cannon is, in effect, a hollow metal cylinder. The projectile – a cannonball or
   artillery shell – is placed into the barrel. A propellant is loaded behind it – into 
   the breech of the gun – to provide the energy and force for firing. Up until the 1880s, 
   black powder (a mixture of potassium nitrate, charcoal and sulfur in the ratio 75:15:10) 
   was commonly used. 
   In Verne’s Columbiad, fulminating cotton serves as the fictional explosive.</p>
 <p>2.	Ignition</p>
-<p style="text-indent: 40px;">The powder is ignited via a fuse or friction primer. 
+<p style="padding-left: 40px;">The powder is ignited via a fuse or friction primer. 
   Rapid combustion produces expanded gases, generating high pressure behind
   the projectile. An electric spark is used to fire the Columbiad.</p>
 <p>3.	Projectile acceleration</p>
-<p style="text-indent: 40px;">The expanding gases push the projectile through the barrel. 
+<p style="padding-left: 40px;">The expanding gases push the projectile through the barrel. 
   It’s acceleration is variable along the barrels length, governed by a
   variety of factors including the barrel’s dimensions, 
   the pressure of the gases, and, in turn, the propellant used.</p>
 
 <p>4.	Ejection</p>
-<p style="text-indent': 40px;">
+<p style="padding-left: 40px;">
   Upon leaving the barrel, the projectile is no longer acted upon by the pressure of the 
   propellant’s gases. 
   It enters freefall, subject solely to gravity and air resistance.</p>
 <p>5.	Recoil</p>
-<p style="text-indent: 40px;">Newton’s third law dictates that as the projectile gains forward momentum, 
+<p style="padding-left: 40px;">Newton’s third law dictates that as the projectile gains forward momentum, 
   the cannon itself gains backward momentum. Historically, this was managed by 
   the cannon carriage and crew – since the cannon has a very large mass, the velocity 
   it acquires is much smaller than that of the cannonball. In the case of Verne’s Columbiad,
@@ -125,29 +125,112 @@
     <strong>Danger of high G</strong>
 </p>
 
-<p>There has been extensive research into the effects of extreme acceleration on humans. One G denotes 
-  the acceleration experienced due to gravity at the Earth's surface.</p>
+<p>Extensive research has been conducted into 
+  the physiological effects of extreme accelerations on humans.</p>
 
 <figure class="aacenter-image">
   <img src="VernePhotos/Ggraph.png" alt="Description 1">  
 </figure>
-<p>Stoll’s G-time curve above demonstrates the threat posed by accelerations to humans above about 3G. 
-  High Gs may be sustained by humans but only for very short periods of time [3].</p>
+<p>Stoll's G-time curve demonstrates the dangers posed by sustained acceleration above approximately 3G.
+  Humans can tolerate high G-forces, but only for very short durations [3].</p>
+<p>This raises the central question:</p>
+<p style="font-size: 1.8em; text-align: left;">
+    <strong>What acceleration would a cannon impose?</strong>
+</p>   
+
+<p>Given that high G-forces are tolerable only briefly, it is reasonable to consider the
+  <em>maximum acceleration</em> experienced by the projectile when assessing the 
+  feasibility of manned cannon-based space travel.</p>
+<p>To estimate this, we consider a highly idealised cannon. In this model, the projectile undergoes uniform 
+  acceleration from rest to Earth's escape velocity.</p>
+<p>Reaching escape velocity is essential: only at this velocity does the projectile possess sufficient kinetic
+  energy to overcome the Earth's gravitational pull.</p>
+<p>This is not a physically realistic cannon, per se. Gas expansion does not produce uniform acceleration for a given barrel length. However
+  , this idealised case provides a <strong>lower bound</strong> on peak acceleration for a given barrel length. 
+  Any real cannon would subject the projectile to even greater maximum accelerations.</p>
+<p>It also neglects air resistance which would be a major mitigating factor. In the real world, where there is air resistance, a velocity of 11.2km/s is not sufficient to escape as some energy will be lost working against that resistance.</p>
+<p>Using the SUVAT equation:</p>
+
+<p> </p>
+<p>\[
+v^2 = u^2 + 2as
+\]</p>
+<p> </p>
+<p>Where:</p>
+<ul>
+  <li>\( v \) = escape velocity (11.2km/s)</li>
+  <li>\( u \) = initial velocity (taken to be zero)</li>
+  <li>\( a \) = acceleration inside the barrel</li>
+  <li>\( s \) = barrel length</li>
+</ul>
+<p>Rearranging:</p>
+<p></p>
+<p>\[
+a = \frac{v^2}{2s}
+\]</p>
 
 
 
+<p>Thus, the acceleration experienced in this idealised limiting case is proportional to the square of the escape velocity and inversely proportional to the cannon length.</p>
+<p>If we want low Gs, we need a long cannon... But just how long?</p>
 
-
-
-
-
-
-
+<p>The graph below illustrates the relationship between G-force and cannon length. For clarity, 
+accelerations above 10G are labelled "probably fatal," 3G-10G as "highly dangerous," and 1G-3G as "likely safe." Human 
+tolerance depends on duration, physical condition and body orientation, so these boundaries are not definitive - examination of the 
+Stoll curve above demonstrates that they are reasonable, though. Examination of established G-time data makes clear that sustained accelerations above 3G 
+are physiologically hazardous, and the risk drops substantially after that cutoff.</p>
+<p>For reference:</p>
+<p style="padding-left: 40px;">Maximum space shuttle acceleration during launch and re-entry: ~3G</p>
+<p style="padding-left: 40px;">Apollo 16 peak re-entry acceleration: 7.19G</p>
+<p style="padding-left: 40px;">Fighter pilot seat ejection: 15G-25G (for a very brief duration)</p>
     
 <figure class="center-image">
   <img src="VernePhotos/cannongraphrough.png" alt="Description 1">
 </figure>
-<div id="references">
+
+
+
+<p>Using the idealised uniform acceleration model above, achieving a survivable acceleration of approximately 3G would require 
+  a cannon over 2000km in length. For context, the Earth's average radius is 6371km. A human-rated cannon would therefore need to extend across a substantial fraction of the planet itself. 
+  The required scale is not merely large - it's of the order of a thousand kilometres - it is geophysical.</p>
+
+
+    
+<p style="font-size: 1.8em; text-align: left;">
+    <strong>Does Verne address the acceleration problem?</strong>
+</p>   
+<p>To his credit, Verne recognises that the launch impulse presents a fatal danger. He proposes a water-cushioning system within the projectile, intended to act as a spring and absorb the impulse [4]:</p>
+<div class="big-quote">
+  <p>The projectile had now to be filled to the depth of three feet with a bed of water, intended to support a water-tight wooden disc,
+    which worked easily within the walls of the projectile. It was upon this kind of raft that the travelers were to take their place. 
+    This body of water was divided by horizontal partitions, which the shock of the departure would have to break in succession. Then each 
+    sheet of the water, from the lowest to the highest, running off into escape tubes toward the top of the projectile, constituted a kind 
+    of spring; and the wooden disc, supplied with extremely powerful plugs, could not strike the lowest plate except after breaking successively
+    the different partitions. Undoubtedly the travelers would still have to encounter a violent recoil after the complete escapement of the water;
+    but the first shock would be almost entirely destroyed by this powerful spring. The upper parts of the walls were lined with a thick padding of
+    leather, fastened upon springs of the best steel, behind which the escape tubes were completely concealed; thus all imaginable precautions had
+    been taken for averting the first shock; and if they did get crushed, they must, as Michel Ardan said, be made of very bad materials.</p>
+</div> 
+
+<p>This is an imaginative attempt at sci-fi realism; Verne is indeed wise to address this issue.
+  However, the fundamental issue remains unchained. The acceleration experienced by the travellers depends primarily on the distance over which they are brought up to escape velocity. 
+The Columbiad is only 900 feet long. No internal cushioning can meaningfully reduce peak acceleration without dramatically increasing the distance over which deceleration occurs. 
+To achieve survivable conditions the cushioning itself woudl need to extend over hundreds - or indeed thousands - of kilometres.</p>
+<p>The constraint is therefore geometric, rather than solely mechanical.</p>
+
+
+<p style="font-size: 1.8em; text-align: left;">
+    <strong>Columbiad: The Verdict</strong>
+</p> 
+
+<p>Under the most generous possible assumptions - uniform acceleration, ideal energy transfer and no air resistance - Verne's passengers 
+  would experience a minimum acceleration ~50,000G. This would be instantly fatal, and exceed anything ever experienced and survived by a human.</p> 
+
+<p>Verne demonstrates impressive technical imagination. Yet he is ultimately constrained by human physiology and biological frailty. If the powder is actually sufficient to reach escape velocity 
+  - and that is a problem for the chemist - The Columbiad may be able to launch an invincible projectile to the moon. It cannot launch a person.</p>
+
+    
+
   <h2>References</h2>
   <ol>
     <li>
@@ -156,6 +239,7 @@
     <li>Crawford, K.R. et al. (2020) “Internal ballistics of smoothbore guns,” IOP conference series. Materials Science and Engineering, 971(4), p. 42041.</li>
 <li>Stoll AM: Human tolerance to positive G as determined by physiological
 endpoints. Aviat Med 1956, 27:356–367.</li>
+<li>Verne, Jules. From the Earth to the Moon. 1865.</li>
   </ol>
 </div>
 <script src="js/reference_formatter.js"></script>
