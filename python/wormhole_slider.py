@@ -61,11 +61,29 @@ for b0 in b0_values:
 fig.update_layout(
     title="Morris–Thorne Wormhole (Interactive Throat Radius b₀)",
     scene=dict(
-        xaxis_title="x",
-        yaxis_title="y",
-        zaxis_title="z",
-        aspectmode="data",
+    xaxis=dict(
+        title="x",
+        showticklabels=False,
+        ticks="",
+        showgrid=False,
+        zeroline=False,
     ),
+    yaxis=dict(
+        title="y",
+        showticklabels=False,
+        ticks="",
+        showgrid=False,
+        zeroline=False,
+    ),
+    zaxis=dict(
+        title="z",
+        showticklabels=False,
+        ticks="",
+        showgrid=False,
+        zeroline=False,
+    ),
+    aspectmode="data",
+),
     margin=dict(l=0, r=0, t=55, b=0),
     sliders=[dict(
         active=b0_values.index(start_b0) if start_b0 in b0_values else 0,
