@@ -31,13 +31,13 @@
         },
 
         {
-            "id": "Minor Study",
+            "id": "Dune",
             "case_type": "minor_study",
             "href": "#info1",
             "bubble_class": "right",
             "bubble_pos": "380px",
-            "year": "1955",
-            "text": "Ad qui consectetur amet consequat quis anim. Mollit pariatur exercitation et qui ex nostrud. Ipsum non aute officia voluptate incididunt tempor. Laboris dolore minim sit velit ullamco dolor."
+            "year": "1965",
+            "text": "The enormous 'Heighliner' spaceships of Dune rely on a wormhole-style 'folding' of spacetime, instantaneously sending ships to their destination in another star system. Rather than relying on computers for navigation, human navigators must consume the Spice Melange to see into the future and predict a safe place to jump to."
         },
 
         {
