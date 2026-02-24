@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+  
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body class="vernebody">
+
+  <div id="vernesidebar">
+    <a href="/index.html">Home Page</a>
+    <a href="/primers.html">Primers</a>
+    <a href="#">Study 1: From the Earth to the Moon</a>
+    <a href="/star_trek.html">Study 2: Star Trek</a>
+    <a href="/interstellar.html">Study 3: Interstellar</a>
+    <a href="/ask_experts.html">Ask the Experts</a>
+  </div>
+
+
+  <h1 id="vernetitle">Physical primers: The three tyrannies of spaceflight</h1>
+
+  <div id="main">
+  <div class="section-menu">
+  <a href="Primers.html">Synopsis</a>
+  <a href="Primers_2.html">History</a>
+  <a href="Primers_3.html">The Physics of the Columbiad</a>
+  </div> 
+  <p style="font-size: 1.8em; text-align: left;">
+    <strong>The Plot</strong>
+  </p>
+
+<div id="references">
+  <h2>References</h2>
+  <ol>
+    <li>Verne, Jules. <em>From the Earth to the Moon</em>. 1865.</li>
+    <li>Images: de Montaut, Henri. Illustrations from the book. public domain. 1868.</li>
+  </ol>
+</div>
+<script src="js/reference_formatter.js"></script>
+<script src="js/jules_verne_script.js"></script>
+    
+  <script src="js/main_script.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>
