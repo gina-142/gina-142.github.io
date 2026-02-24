@@ -4,7 +4,7 @@ fetch("page_data.json")
   .then(res => res.json())
   .then(data => {
     const timeline = document.getElementById("timeline");
-    const spacing = 70;
+    const spacing = 30;
     const sideOffset = 30;
 
     const bubbles = data.events.map((event, index) => {
