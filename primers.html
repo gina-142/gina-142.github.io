@@ -1,6 +1,14 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <head>
-  <title>My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+  <title>Physical primers: The three tyrannies of space travel</title>
   <link rel="stylesheet" href="css/style.css">
 
   <script>
@@ -11,35 +19,38 @@
     }
   };
   </script>
-
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
 
-<body>
-
+<body class="interstellar">
   <div id="sidebar">
-    <a href="/index.html">Home Page</a>
-    <a href="#">Primers</a>
-    <a href="/jules_verne.html">Study 1: From the Earth to the Moon</a>
-    <a href="/star_trek.html">Study 2: Star Trek</a>
-    <a href="/interstellar.html">Study 3: Interstellar</a>
-    <a href="/ask_experts.html">Ask the Experts</a>
+    <a href="index.html">Home Page</a>
+    <a href="primers.html">Primers</a>
+    <a href="jules_verne.html">Study 1: From the Earth to the Moon</a>
+    <a href="star_trek.html">Study 2: Star Trek</a>
+    <a href="#" class="active-nav">Study 3: Interstellar</a>
+    <a href="ask_experts.html">Ask the Experts</a>
   </div>
 
-  <h1 id="title">Primers</h1>
+  <h1 id="title">Physical primers: The three tyrannies of space travel</h1>
 
   <div id="main">
-    <p>
-        Page content
-    </p>
 
-  </div>
+    <div class="section-menu">
+      <a href="interstellar.html" class="active-tab">Escape velocity</a>
+      <a href="interstellar_wormhole.html">The rocket equation</a>
+      <a href="interstellar_geometry.html">Special relativity</a>
+    </div>
+
+    <h2 class="section-heading">Primers</h2>
+
+  
 
   <script src="js/main_script.js"></script>
-  <script src="js/effects.js"></script>
+  <script src="js/interstellar_effects.js"></script>
+  
 </body>
 </html>
