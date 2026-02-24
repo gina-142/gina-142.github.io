@@ -12,6 +12,7 @@
         {
             "id": "Lensman",
             "case_type": "minor_study",
+            "name": "info1",
             "href": "#info1",
             "year": "1934",
             "image": "Timeline_Images/Image_Placeholder.png",
@@ -21,7 +22,8 @@
         {
             "id": "Dune",
             "case_type": "minor_study",
-            "href": "#info1",
+            "name": "info2",
+            "href": "#info2",
             "year": "1965",
             "image": "Timeline_Images/Image_Placeholder.png",
             "text": "The enormous 'Heighliner' spaceships of Dune rely on a wormhole-style 'folding' of spacetime, instantaneously sending ships to their destination in another star system. Rather than relying on computers for navigation, human navigators must consume the Spice Melange to see into the future and predict a safe place to jump to."
@@ -39,7 +41,8 @@
         {
             "id": "Stargate",
             "case_type": "minor_study",
-            "href": "#info1",
+            "name": "info3",
+            "href": "#info3",
             "year": "1994",
             "image": "Timeline_Images/Image_Placeholder.png",
             "text": "In the Stargate universe, most interstellar travel takes place through the eponymous stargates, fixed wormholes just a few metres wide that allow for instantaneous travel from one place to another."
@@ -57,7 +60,8 @@
         {
             "id": "The Expanse",
             "case_type": "minor_study",
-            "href": "#info1",
+            "name": "info4",
+            "href": "#info4",
             "year": "2016",
             "image": "Timeline_Images/Image_Placeholder.png",
             "text": "Starting from a foundation of scientific realism, spaceships in the early series of The Expanse are propelled by a fusion propulsion drive called the Epstein Drive, the slow speed of which limits space travel to within the asteroid belt. However, the discovery of alien Ring Gates like those in the Stargate series allows ships to travel to other gates across the galaxy faster than light, through a hub known as the 'Slow Zone'."
