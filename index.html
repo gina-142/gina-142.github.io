@@ -1,64 +1,222 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Physics and the Final Frontier</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MathJax -->
   <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
   </script>
-
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
   <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-  
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
 
+  <!-- ===== SIDEBAR ===== -->
   <div id="sidebar">
-    <a href="#">Home Page</a>
-    <a href="/primers.html">Primers</a>
-    <a href="/jules_verne.html">Study 1: Jules Verne</a>
-    <a href="/star_trek.html">Study 2: Star Trek</a>
-    <a href="/interstellar.html">Study 3: Interstellar</a>
-    <a href="/ask_experts.html">Ask the Experts</a>
-    <a href="/references_page.html">References</a>
+    <a href="index.html" class="active">Home Page</a>
+    <a href="primers.html">Primers</a>
+    <a href="jules_verne.html">Study 1: Jules Verne</a>
+    <a href="star_trek.html">Study 2: Star Trek</a>
+    <a href="interstellar.html">Study 3: Interstellar</a>
+    <a href="ask_experts.html">Ask the Experts</a>
+    <a href="references_page.html">References</a>
   </div>
 
   <h1 id="title">Physics and the Final Frontier: A historical survey of spaceflight in science fiction</h1>
 
   <div id="main">
     <p>
-      Ad qui consectetur amet consequat quis anim. Mollit pariatur 
-      exercitation et qui ex nostrud. Ipsum non aute officia voluptate 
-      incididunt tempor. Laboris dolore minim sit velit ullamco dolor. 
-      Aliqua ipsum velit deserunt in irure qui. Veniam aute ut enim 
-      nulla fugiat ut. Irure duis incididunt sunt aliquip do sit. 
-      Exercitation et aliquip cillum ex ipsum deserunt. Aute id ullamco 
-      ullamco ipsum cupidatat aliqua. Est sunt tempor adipisicing id 
-      reprehenderit laboris. Ea anim cupidatat minim commodo sunt 
+      Ad qui consectetur amet consequat quis anim. Mollit pariatur
+      exercitation et qui ex nostrud. Ipsum non aute officia voluptate
+      incididunt tempor. Laboris dolore minim sit velit ullamco dolor.
+      Aliqua ipsum velit deserunt in irure qui. Veniam aute ut enim
+      nulla fugiat ut. Irure duis incididunt sunt aliquip do sit.
+      Exercitation et aliquip cillum ex ipsum deserunt. Aute id ullamco
+      ullamco ipsum cupidatat aliqua. Est sunt tempor adipisicing id
+      reprehenderit laboris. Ea anim cupidatat minim commodo sunt
       aliqua. Minim veniam nostrud aliqua elit velit cillum.
     </p>
 
     <div id="timeline"></div>
-
   </div>
 
-  <div id="info1" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Info Title</h2>
-      <p>This is the information for this popup.</p>
+  <!-- ===== FACT OR FICTION ===== -->
+  <div id="ff-section">
+    <div id="ff-header">
+      <p id="ff-label">FACT OR FICTION?</p>
+      <h2 id="ff-title">How well do you know the science?</h2>
+      <p id="ff-subtitle">Eight statements about the physics behind the stories — can you tell what's real?</p>
+    </div>
+
+    <div id="ff-card">
+      <div id="ff-progress-wrap">
+        <div id="ff-progress-bar"><div id="ff-progress-fill"></div></div>
+        <span id="ff-progress-label"></span>
+      </div>
+
+      <div id="ff-statement-wrap">
+        <p id="ff-statement"></p>
+      </div>
+
+      <div id="ff-buttons">
+        <button id="ff-fact-btn">FACT</button>
+        <button id="ff-fiction-btn">FICTION</button>
+      </div>
+
+      <div id="ff-feedback-wrap" style="display:none;">
+        <p id="ff-verdict"></p>
+        <p id="ff-explanation"></p>
+        <button id="ff-next-btn">Next &rarr;</button>
+      </div>
+    </div>
+
+    <div id="ff-result" style="display:none;">
+      <p id="ff-result-score"></p>
+      <p id="ff-result-msg"></p>
+      <button id="ff-restart-btn">Play Again</button>
     </div>
   </div>
 
+  <!-- ===== ONE MODAL USED BY ALL MINOR STUDY BUBBLES ===== -->
+  <div id="info1" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close" id="info1-close" aria-label="Close">&times;</span>
+      <h2 id="info1-title">Info Title</h2>
+      <p id="info1-body">This is the information for this popup.</p>
+    </div>
+  </div>
+
+  <!-- Timeline generation (must run before click-handlers that depend on it) -->
   <script src="js/main_script.js"></script>
+  <script src="js/effects.js"></script>
+
+  <!-- ===== FACT OR FICTION LOGIC ===== -->
+  <script>
+    (function () {
+      var statements = [
+        { text: "Kip Thorne won the Nobel Prize in Physics for his work on gravitational waves.", fact: true,
+          explanation: "Thorne was awarded the Nobel Prize in Physics in 2017 — years after consulting on Interstellar. His theoretical work on gravitational waves was confirmed by the LIGO detector." },
+        { text: "In Interstellar, the wormhole is located near Mars.", fact: false,
+          explanation: "The wormhole is positioned near Saturn. Its proximity to a recognisable planet was a deliberate narrative choice, giving the crew a landmark for their journey." },
+        { text: "Jules Verne launched his characters to the Moon using a giant cannon.", fact: true,
+          explanation: "In From the Earth to the Moon (1865), the crew are fired from a colossal Columbiad cannon in Florida — a surprisingly accurate choice of launch site, if not launch method." },
+        { text: "Einstein's theory of special relativity permits faster-than-light travel.", fact: false,
+          explanation: "Special relativity shows that as an object with mass approaches the speed of light, the energy required becomes infinite. FTL travel for ordinary matter is therefore prohibited." },
+        { text: "A traversable wormhole requires exotic matter with negative energy density to remain open.", fact: true,
+          explanation: "The Morris-Thorne metric demonstrates that without exotic matter, gravity would force the wormhole throat to collapse — making it impassable." },
+        { text: "The Alcubierre warp drive is prohibited by Einstein's general relativity.", fact: false,
+          explanation: "The Alcubierre metric is actually a valid solution to Einstein's field equations. The problem is the exotic matter required — not the theory itself." },
+        { text: "The wormhole in Interstellar appears as a flat circular portal on screen.", fact: false,
+          explanation: "Thanks to accurate relativistic rendering by physicist Kip Thorne, the wormhole appears as a perfect sphere — light from behind it bends around all sides equally." },
+        { text: "Star Trek first aired on television in 1966.", fact: true,
+          explanation: "The Original Series premiered on NBC on 8 September 1966 and ran for three seasons, introducing warp drive, phasers, and the Prime Directive to popular culture." }
+      ];
+
+      var current = 0, score = 0;
+
+      var statementEl   = document.getElementById('ff-statement');
+      var factBtn       = document.getElementById('ff-fact-btn');
+      var fictionBtn    = document.getElementById('ff-fiction-btn');
+      var feedbackWrap  = document.getElementById('ff-feedback-wrap');
+      var verdictEl     = document.getElementById('ff-verdict');
+      var explanationEl = document.getElementById('ff-explanation');
+      var nextBtn       = document.getElementById('ff-next-btn');
+      var progressLabel = document.getElementById('ff-progress-label');
+      var progressFill  = document.getElementById('ff-progress-fill');
+      var card          = document.getElementById('ff-card');
+      var resultEl      = document.getElementById('ff-result');
+      var resultScore   = document.getElementById('ff-result-score');
+      var resultMsg     = document.getElementById('ff-result-msg');
+      var restartBtn    = document.getElementById('ff-restart-btn');
+
+      function loadStatement() {
+        var s = statements[current];
+        feedbackWrap.style.display = 'none';
+        factBtn.disabled = false;
+        fictionBtn.disabled = false;
+        factBtn.className = '';
+        fictionBtn.className = '';
+
+        statementEl.style.opacity = 0;
+        statementEl.innerHTML = s.text;
+
+        progressLabel.textContent = (current + 1) + ' / ' + statements.length;
+        progressFill.style.width = ((current / statements.length) * 100) + '%';
+
+        setTimeout(function () { statementEl.style.opacity = 1; }, 50);
+      }
+
+      function answer(chosenFact) {
+        var s = statements[current];
+        var correct = (chosenFact === s.fact);
+        if (correct) score++;
+
+        factBtn.disabled = true;
+        fictionBtn.disabled = true;
+
+        if (s.fact) {
+          factBtn.className = 'ff-correct';
+          if (!correct) fictionBtn.className = 'ff-wrong';
+        } else {
+          fictionBtn.className = 'ff-correct';
+          if (!correct) factBtn.className = 'ff-wrong';
+        }
+
+        verdictEl.textContent = correct ? '✓ Correct!' : '✗ Not quite.';
+        verdictEl.className = correct ? 'ff-verdict-correct' : 'ff-verdict-wrong';
+        explanationEl.textContent = s.explanation;
+        feedbackWrap.style.display = 'block';
+      }
+
+      factBtn.addEventListener('click', function () { answer(true); });
+      fictionBtn.addEventListener('click', function () { answer(false); });
+
+      nextBtn.addEventListener('click', function () {
+        current++;
+        if (current < statements.length) {
+          loadStatement();
+        } else {
+          progressFill.style.width = '100%';
+          card.style.display = 'none';
+          resultEl.style.display = 'block';
+
+          var pct = Math.round((score / statements.length) * 100);
+          resultScore.textContent = score + ' / ' + statements.length;
+          resultMsg.textContent =
+            pct === 100 ? 'Perfect — you clearly know your physics from your fiction.' :
+            pct >= 75   ? 'Impressive. The site has done its job.' :
+            pct >= 50   ? 'Not bad — a few more pages and you\'ll ace it.' :
+                          'Time to explore the case studies again!';
+        }
+      });
+
+      restartBtn.addEventListener('click', function () {
+        current = 0; score = 0;
+        card.style.display = 'block';
+        resultEl.style.display = 'none';
+        loadStatement();
+      });
+
+      loadStatement();
+    })();
+  </script>
 </body>
 </html>
