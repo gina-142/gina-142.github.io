@@ -740,6 +740,10 @@ body.star-trek #sidebar {
     font-family: 'Orbitron', sans-serif;
 }
 
+body.star-trek #sidebar a:hover {
+    background-color: #cecdcd;
+}
+
 body.star-trek #sidebar a {
     color: #000;
     font-size: 0.9em;
