@@ -1160,3 +1160,28 @@ body.interstellar ::selection {
   color: #ffffff;
 }
 
+.interstellar-quote {
+  margin: 40px auto;
+  padding: 30px 40px;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #c2b280; /* soft gold accent */
+  backdrop-filter: blur(6px);
+}
+
+.quote-text {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.quote-source {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.9em;
+  margin-top: 15px;
+  text-align: right;
+  opacity: 0.8;
+}
+
