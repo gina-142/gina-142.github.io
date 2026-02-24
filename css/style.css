@@ -424,6 +424,13 @@ a[data-case-type="major_study"] .bubble {
   border-radius: 8px;
 }
 
+.bubble.major {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 700px;
+}
+
 .left {
   right: 50%;
   margin-right: 20px;
@@ -436,23 +443,23 @@ a[data-case-type="major_study"] .bubble {
 
 /* Connector lines to the central spine */
 .left::before {
-  content: " ";
+  content: "";
   position: absolute;
-  top: 50px;
-  width: 27px;
-  z-index: 1;
-  right: -26px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  top: 50%;
+  left: 100%;
+  width: var(--connector-width);
+  transform: translateY(-50%);
+  border-top: 1px solid rgba(255,255,255,0.25);
 }
 
 .right::before {
-  content: " ";
+  content: "";
   position: absolute;
-  top: 50px;
-  width: 27px;
-  z-index: 1;
-  left: -22px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  top: 50%;
+  right: 100%;
+  width: var(--connector-width);
+  transform: translateY(-50%);
+  border-top: 1px solid rgba(255,255,255,0.25);
 }
 
 /* Timeline cards */
@@ -741,7 +748,7 @@ body.star-trek #sidebar {
 }
 
 body.star-trek #sidebar a:hover {
-    background-color: #cecdcd;
+    background-color: #8a8989;
 }
 
 body.star-trek #sidebar a {
