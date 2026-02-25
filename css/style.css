@@ -90,11 +90,9 @@ body {
   text-decoration: none;
 }
 
-/* =====================================================
-   FACT OR FICTION
-   ===================================================== */
+
 #ff-section {
-  margin-left: 200px;          /* clear sidebar */
+  margin-left: 200px;         
   padding: 80px 60px 100px 60px;
   background: linear-gradient(180deg, #2a2f3e 0%, #1a1e2a 100%);
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -102,7 +100,7 @@ body {
   overflow: hidden;
 }
 
-/* Subtle star-dot texture behind the section */
+
 #ff-section::before {
   content: '';
   position: absolute;
@@ -147,7 +145,7 @@ body {
   margin: 0;
 }
 
-/* Card */
+
 #ff-card {
   max-width: 680px;
   margin: 0 auto;
@@ -160,7 +158,6 @@ body {
   position: relative;
 }
 
-/* Progress bar */
 #ff-progress-wrap {
   display: flex;
   align-items: center;
@@ -390,7 +387,7 @@ body {
   z-index: 0;
 }
 
-/* Central vertical line */
+
 #timeline::before {
   content: "";
   background: rgba(255, 255, 255, 0.25);
@@ -558,14 +555,7 @@ a[data-case-type="major_study"] .content:hover {
 .close:hover {
   color: #ffffff;
 }
-/* added by Gussie */
-/* .big-quote {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 0.9em;
-    margin: 25px 60px;
-    line-height: 1.7;
-} */
+
 
 .vernebody .big-quote {
     font-weight: bold;
@@ -588,19 +578,6 @@ a[data-case-type="major_study"] .content:hover {
     width: 100%;
     margin-bottom: 40px;
 }
-
-/* .section-menu {
-    display: flex;
-    flex-wrap: nowrap;        /* Prevent wrapping */
-/*    position: fixed;          /* stay fixed below title */
-/*    top: 58px;                /* slightly above 60px to hug title */
-/*    left: 200px;              /* start after sidebar */
- /*   right: 0;                 /* stretch to right edge */
- /*   z-index: 999;             /* above content */
-/*    background: #f4f4f4;      /* menu background */
- /*   border-bottom: 2px solid black;
-    box-sizing: border-box;   /* include borders in width */
-/*}*/
 
 .section-menu {
     display: flex;
@@ -788,21 +765,18 @@ body.star-trek .section-menu a:hover {
     background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); 
 }
 
-/* ===================================================================
-   GLOBAL IMPROVEMENTS
-   =================================================================== */
 
-/* Smooth hover transitions on all sidebar links */
+
 #sidebar a, #vernesidebar a {
     transition: background-color 0.2s;
 }
 
-/* Better line-height across all main content areas */
+
 #main {
     line-height: 1.8;
 }
 
-/* Scroll-reveal — used site-wide */
+
 .reveal {
     opacity: 0;
     transform: translateY(16px);
@@ -814,14 +788,13 @@ body.star-trek .section-menu a:hover {
     transform: translateY(0);
 }
 
-/* Star Trek images — override the global sepia border/bg which looks wrong on coloured backgrounds */
+
 body.star-trek .image-row img {
     border: 2px solid rgba(255,255,255,0.2);
     background-color: transparent;
     box-shadow: 0 4px 14px rgba(0,0,0,0.5);
 }
 
-/* References section — applies site-wide (interstellar overrides below) */
 #references {
     margin-top: 50px;
     padding-top: 20px;
@@ -839,11 +812,9 @@ body.star-trek .image-row img {
     font-size: 0.92em;
 }
 
-/* ===================================================================
-   JULES VERNE SECTION
-   =================================================================== */
 
-/* Section menu themed to Verne's warm brown palette */
+
+
 body.vernebody .section-menu {
     background: #c9ad9e;
     border-bottom: 2px solid #4a2013;
@@ -872,7 +843,7 @@ body.vernebody .section-menu a.active-tab {
     color: #ffffff;
 }
 
-/* Verne section headings */
+
 .verne-heading {
     font-family: 'Antic Didone', serif;
     font-size: 1.6em;
@@ -880,29 +851,27 @@ body.vernebody .section-menu a.active-tab {
     margin: 1.2em 0 0.4em 0;
 }
 
-/* Verne references border tint */
+
 body.vernebody #references {
     border-top-color: rgba(74,32,19,0.3);
 }
 
-/* ===================================================================
-   STAR TREK SECTION
-   =================================================================== */
 
-/* Section menu active tab */
+
+
 body.star-trek .section-menu a.active-tab {
     background: linear-gradient(to bottom, #ffffff, #d0d0d0);
     color: #000;
     border-bottom: 2px solid #444;
 }
 
-/* Sidebar active state */
+
 body.star-trek #sidebar a.active {
     background-color: #999;
     color: #000;
 }
 
-/* Star Trek heading spacing */
+
 body.star-trek .startrekheading {
     margin-top: 1.3em;
     margin-bottom: 0.3em;
@@ -912,16 +881,12 @@ body.star-trek .center-image figcaption {
   color: white;
 }
 
-/* ===================================================================
-   INTERSTELLAR SECTION — Cinematic Dark Theme
-   =================================================================== */
 
-/* Background colour only — stars drawn by canvas in interstellar_effects.js */
 body.interstellar {
     background-color: #05080f;
 }
 
-/* --- Fonts --- */
+
 body.interstellar #title,
 body.interstellar #sidebar,
 body.interstellar #sidebar a,
@@ -931,7 +896,7 @@ body.interstellar .section-menu a {
     font-weight: 700;
 }
 
-/* --- Main content area (position:relative so it sits above the canvas layer) --- */
+
 body.interstellar #main {
     margin-left: 200px;
     min-height: 100vh;
@@ -949,7 +914,7 @@ body.interstellar #main p {
     margin-bottom: 1.2em;
 }
 
-/* --- Sidebar: frosted dark glass --- */
+
 body.interstellar #sidebar {
     background: rgba(10, 14, 26, 0.92);
     backdrop-filter: blur(12px);
@@ -979,7 +944,7 @@ body.interstellar #sidebar a.active-nav {
     border-left: 3px solid #6494ed;
 }
 
-/* --- Title bar: dark with subtle bottom glow --- */
+
 body.interstellar #title {
     background: rgba(10, 14, 26, 0.95);
     backdrop-filter: blur(12px);
@@ -990,7 +955,7 @@ body.interstellar #title {
     border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-/* --- Section sub-menu: sleek dark tabs --- */
+
 body.interstellar .section-menu {
     background: rgba(10, 14, 26, 0.92);
     backdrop-filter: blur(10px);
@@ -1025,7 +990,7 @@ body.interstellar .section-menu a.active-tab {
     background: rgba(100,160,255,0.08);
 }
 
-/* --- Section headings --- */
+
 body.interstellar .section-heading {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6em;
@@ -1037,7 +1002,7 @@ body.interstellar .section-heading {
     border-bottom: 1px solid rgba(100,160,255,0.2);
 }
 
-/* --- Blockquotes / big-quote: glowing accent --- */
+
 body.interstellar .big-quote {
     border: none;
     border-left: 4px solid #6494ed;
@@ -1097,7 +1062,7 @@ body.interstellar .interstellar-image figcaption {
   line-height: 1.6;
 }
 
-/* --- Interactive wormhole slider --- */
+
 body.interstellar .wormhole-slider-wrap {
   margin: 60px auto;
   text-align: center;
@@ -1124,7 +1089,7 @@ body.interstellar .wormhole-slider-caption {
   font-style: italic;
 }
 
-/* --- References section --- */
+
 body.interstellar #references {
   margin-top: 60px;
   padding-top: 30px;
@@ -1156,12 +1121,12 @@ body.interstellar #references em {
   color: #a0b4d4;
 }
 
-/* --- Smooth scroll for interstellar pages --- */
+
 body.interstellar {
   scroll-behavior: smooth;
 }
 
-/* --- Selection colour --- */
+
 body.interstellar ::selection {
   background: rgba(100,148,237,0.35);
   color: #ffffff;
