@@ -37,7 +37,7 @@ fetch("page_data.json")
         inner = document.createElement("img");
         inner.src = event.image;
         inner.style.borderRadius = "6px";
-        inner.style.margin = "10px auto 0 auto"; // center the image
+        inner.style.margin = "10px auto 0 auto";
         inner.style.display = "block";
         if (event.vertical) {
             inner.style.maxWidth = "220px";     
@@ -130,11 +130,16 @@ fetch("page_data.json")
         const body = document.createElement("p");
         body.textContent = event.text;
 
+        const ref = document.createElement("p");
+        ref.textContent = event.reference;
+        ref.style.fontStyle = "italic";
+
         content.appendChild(close);
         content.appendChild(title);
         content.appendChild(body);
         modal.appendChild(content);
         modalsContainer.appendChild(modal);
+        content.appendChild(ref);
       }
     });
   })

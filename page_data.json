@@ -7,7 +7,8 @@
             "href": "#info8",
             "year": "1687",
             "image": "Timeline_Images/Newton_Paper.png",
-            "text": "In Philosophiae Naturalis Principia Mathematica, Isaac Newton developed the laws of motion and universal gravitation. From his work came the idea of escape velocity, the speed required to break free from Earth's gravitational pull. Unlike the giant cannon launch imagines in Jules Verne's From the Earth to the Moon, real spacecraft must reach a precise threshold to avoid falling back to Earth. This simple idea of rockets needing to reach a  threshold speed to avoid falling back to earth still governs every launch into space today, and even launch sequences depicted in The Martian."
+            "text": "In Philosophiae Naturalis Principia Mathematica, Isaac Newton developed the laws of motion and universal gravitation. From his work came the idea of escape velocity, the speed required to break free from Earth's gravitational pull. Unlike the giant cannon launch imagines in Jules Verne's From the Earth to the Moon, real spacecraft must reach a precise threshold to avoid falling back to Earth. This simple idea of rockets needing to reach a  threshold speed to avoid falling back to earth still governs every launch into space today, and even launch sequences depicted in The Martian.",
+            "reference": "This is a reference"
         },
 
         {
