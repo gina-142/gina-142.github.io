@@ -140,28 +140,6 @@ fetch("page_data.json")
         modal.appendChild(content);
         modalsContainer.appendChild(modal);
         content.appendChild(ref);
-
-
-        // ADD SPOTIFY IF IT EXISTS
-if (event.spotify_embed) {
-  const iframe = document.createElement("iframe");
-  iframe.src = event.spotify_embed;
-  iframe.width = "100%";
-  iframe.height = "152";
-  iframe.style.marginTop = "15px";
-  iframe.style.borderRadius = "12px";
-  iframe.setAttribute("frameborder", "0");
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.setAttribute(
-    "allow",
-    "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  );
-  content.appendChild(iframe);
-}
-
-content.appendChild(ref);
-modal.appendChild(content);
-modalsContainer.appendChild(modal); //addend
       }
     });
   })
