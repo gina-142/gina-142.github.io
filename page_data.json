@@ -55,7 +55,7 @@
             "name": "info12",
             "href": "#info12",
             "year": "1915",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/Schwarzschild_Radius.png",
             "text": "Shortly after general relativity was published, Karl Schwarzschild found a solution describing what we now recognise as a black hole. This introduced the idea of an event horizon — a boundary beyond which nothing can escape. Black holes, central to Interstellar and referenced in darker science fiction such as Event Horizon, emerged from this mathematical breakthrough."
         },
 
@@ -76,7 +76,7 @@
             "name": "info13",
             "href": "#info13",
             "year": "1935",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/Einstein_Rosen_Bridges.png",
             "text": "Einstein and Rosen showed that the Schwarzschild solution could be extended to connect two regions of spacetime, however this 'bridge' was not traversable but it did introduce the concept of a wormhole. The first hint at the shortcut through space that went on to inspire countless science fiction stories."
         },
 
@@ -86,7 +86,7 @@
             "name": "info14",
             "href": "#info14",
             "year": "1948",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/Casimir_Effect.png",
             "text": "In 1948, Hendrik Casimir predicted that quantum effect could produce small regions of negative energy between closely space metal plates. Although the effects were small, it demonstrated that exotic energy conditions are not purely fictional. Future proposals of traversable wormholes, such as in Star Trek, and warp drives rely on forms of negative energy."
         },
 
