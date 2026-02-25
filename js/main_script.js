@@ -6,7 +6,7 @@ fetch("page_data.json")
   .then(data => {
     const timeline = document.getElementById("timeline");
     const spacing = 30;
-    const sideOffset = 30;
+    const minStep = 40; // minimum vertical step to enforce global order
 
     const bubbles = data.events.map((event, index) => {
       const a = document.createElement("a");
@@ -39,11 +39,7 @@ fetch("page_data.json")
         inner.style.borderRadius = "6px";
         inner.style.margin = "10px auto 0 auto";
         inner.style.display = "block";
-        if (event.vertical) {
-            inner.style.maxWidth = "220px";     
-        } else {
-            inner.style.maxWidth = "320px";  
-        }
+        inner.style.maxWidth = event.vertical ? "220px" : "320px";
       }
 
       content.appendChild(inner);
@@ -56,45 +52,60 @@ fetch("page_data.json")
 
     const images = timeline.getElementsByTagName("img");
     const totalImages = images.length;
+
     if (totalImages === 0) {
-      positionBubbles(bubbles);
+      positionBubbles();
     } else {
       let loadedCount = 0;
       for (let img of images) {
         img.onload = img.onerror = () => {
           loadedCount++;
           if (loadedCount === totalImages) {
-            positionBubbles(bubbles);
+            positionBubbles();
           }
         };
       }
     }
 
-    function positionBubbles(bubbles) {
+    function positionBubbles() {
       let leftBottom = 0;
       let rightBottom = 0;
+      let previousTop = 0;
 
-      bubbles.forEach(bubble => {
-        const sideClass = bubble.classList.contains("left") ? "left" : "right";
+      bubbles.forEach((bubble, index) => {
+        const isLeft = bubble.classList.contains("left");
+        const sideBottom = isLeft ? leftBottom : rightBottom;
+
         let top;
 
-        if (sideClass === "left") {
-          top = leftBottom;
-          bubble.style.top = `${top}px`;
-          leftBottom = top + bubble.offsetHeight + spacing;
+        if (index === 0) {
+          top = 0;
         } else {
-          top = rightBottom + sideOffset;
-          bubble.style.top = `${top}px`;
-          rightBottom = top + bubble.offsetHeight + spacing;
+          top = Math.max(sideBottom, previousTop + minStep);
         }
 
+        bubble.style.top = `${top}px`;
+
+        const newBottom = top + bubble.offsetHeight + spacing;
+
+        if (isLeft) {
+          leftBottom = newBottom;
+        } else {
+          rightBottom = newBottom;
+        }
+
+        previousTop = top;
+
+        // Connector calculation
         const timelineRect = timeline.getBoundingClientRect();
         const centerX = timelineRect.left + timelineRect.width / 2;
         const bubbleRect = bubble.getBoundingClientRect();
-        let connectorWidth = sideClass === "left"
+
+        const connectorWidth = isLeft
           ? centerX - bubbleRect.right
           : bubbleRect.left - centerX;
-        bubble.style.setProperty('--connector-width', `${connectorWidth}px`);
+
+        bubble.style.setProperty("--connector-width", `${connectorWidth}px`);
       });
 
       timeline.style.height = `${Math.max(leftBottom, rightBottom)}px`;
