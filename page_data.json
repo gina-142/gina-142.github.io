@@ -61,7 +61,7 @@
             "href": "#info10",
             "year": "1905",
             "image": "Timeline_Images/Special_Relativity.png",
-            "text": "In the 1905 paper Einstein established that the speed of light is a universal speed limit that is constant in all inertial frames. In order for this to be true time dilation and length contraction followed, meaning that time slows down as you speed up and distances contract. His research reshaped our understanding of space and time as being malleable and most importantly it put a limit on space travel: nothing with mass can travel faster than light, providing a massive bump in the road for science fiction authors striving to stay true to the real physics. "
+            "text": "In the 1905 paper Einstein established that the speed of light is a universal speed limit that is constant in all inertial frames. In order for this to be true time dilation and length contraction followed, meaning that time slows down as you speed up and distances contract. His research reshaped our understanding of space and time as being malleable and most importantly it put a limit on space travel: nothing with mass can travel faster than light, providing a massive bump in the road for science fiction authors striving to stay true to the real physics. ",
             "reference" : "Einstein, A. (1905) “On the Electrodynamics of Moving Bodies”. Annalen der Physik."
         },
 
@@ -72,7 +72,7 @@
             "href": "#info11",
             "year": "1915",
             "image": "Timeline_Images/General_Relativity.png",
-            "text": "Ten years after his paper on Special Relativity, Einstein reformulated the idea of gravity as being the geometry of spacetime itself. He demonstrated that mass and energy curve spacetime, and matter then follows that curvature. This theory led to the prediction of gravitational waves, black holes, and mathematically, wormholes."
+            "text": "Ten years after his paper on Special Relativity, Einstein reformulated the idea of gravity as being the geometry of spacetime itself. He demonstrated that mass and energy curve spacetime, and matter then follows that curvature. This theory led to the prediction of gravitational waves, black holes, and mathematically, wormholes.",
             "reference" : "Einstein, A. (1915) “Die Feldgleichungen der Gravitation”. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften (Berlin)."
         },
 
@@ -83,7 +83,7 @@
             "href": "#info12",
             "year": "1915",
             "image": "Timeline_Images/Schwarzschild_Radius.png",
-            "text": "Shortly after general relativity was published, Karl Schwarzschild found a solution describing what we now recognise as a black hole. This introduced the idea of an event horizon; a boundary beyond which nothing can escape. Black holes, central to Interstellar and referenced in darker science fiction such as Event Horizon, emerged from this mathematical breakthrough."
+            "text": "Shortly after general relativity was published, Karl Schwarzschild found a solution describing what we now recognise as a black hole. This introduced the idea of an event horizon; a boundary beyond which nothing can escape. Black holes, central to Interstellar and referenced in darker science fiction such as Event Horizon, emerged from this mathematical breakthrough.",
             "reference" : "Schwarzschild, K. (1916) “On the Gravitational Field of a Mass Point According to Einstein’s Theory”. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften (Berlin)."
         },
 
@@ -105,7 +105,7 @@
             "href": "#info13",
             "year": "1935",
             "image": "Timeline_Images/Einstein_Rosen_Bridges.png",
-            "text": "Einstein and Rosen showed that the Schwarzschild solution could be extended to connect two regions of spacetime, however this 'bridge' was not traversable but it did introduce the concept of a wormhole. The first hint at the shortcut through space that went on to inspire countless science fiction stories."
+            "text": "Einstein and Rosen showed that the Schwarzschild solution could be extended to connect two regions of spacetime, however this 'bridge' was not traversable but it did introduce the concept of a wormhole. The first hint at the shortcut through space that went on to inspire countless science fiction stories.",
             "reference" : "Einstein, A. and Rosen, N. (1935) “The Particle Problem in the General Theory of Relativity”. Physical Review."
         },
 
@@ -116,7 +116,7 @@
             "href": "#info14",
             "year": "1948",
             "image": "Timeline_Images/Casimir_Effect.png",
-            "text": "In 1948, Hendrik Casimir predicted that quantum effect could produce small regions of negative energy between closely space metal plates. Although the effects were small, it demonstrated that exotic energy conditions are not purely fictional. Future proposals of traversable wormholes, such as in Star Trek, and warp drives rely on forms of negative energy."
+            "text": "In 1948, Hendrik Casimir predicted that quantum effect could produce small regions of negative energy between closely space metal plates. Although the effects were small, it demonstrated that exotic energy conditions are not purely fictional. Future proposals of traversable wormholes, such as in Star Trek, and warp drives rely on forms of negative energy.",
             "reference" : "Casimir, H.B.G. (1948) “On the Attraction Between Two Perfectly Conducting Plates”. Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen."
         },
 
@@ -170,7 +170,7 @@
             "href": "#info15",
             "year": "1970",
             "image": "Timeline_Images/Apollo_13.webp",
-            "text": "When an oxygen tank exploded aboard Apollo 13, the crew survived by relying on a carefully calculated free-return trajectory around the Moon. The Moon's gravity was used to 'slingshot' the spacecraft around the lunar far side and back toward Earth with minimal fuel use. This real mission demonstrates how lunar travel depends entirely on precise orbital mechanics, contrasting many fictional depictions of effortless voyages to the Moon."
+            "text": "When an oxygen tank exploded aboard Apollo 13, the crew survived by relying on a carefully calculated free-return trajectory around the Moon. The Moon's gravity was used to 'slingshot' the spacecraft around the lunar far side and back toward Earth with minimal fuel use. This real mission demonstrates how lunar travel depends entirely on precise orbital mechanics, contrasting many fictional depictions of effortless voyages to the Moon.",
             "reference" : "NASA (1970) Apollo 13 Mission Report. National Aeronautics and Space Administration."
         },
 
@@ -191,7 +191,7 @@
             "href": "#info16",
             "year": "1988",
             "image": "Timeline_Images/Wormholes_Thorne.png",
-            "text": "In 1988, Morris and Thorne showed that general relativity allows wormholes that could, in principle, be crossed. However, keeping such a tunnel open would require exotic forms of matter. Their work transformed wormholes from purely narrative devices into serious theoretical possibilities and directly influenced the scientific realism pursued in Interstellar while reinforcing the plausibility of portals in Stargate."
+            "text": "In 1988, Morris and Thorne showed that general relativity allows wormholes that could, in principle, be crossed. However, keeping such a tunnel open would require exotic forms of matter. Their work transformed wormholes from purely narrative devices into serious theoretical possibilities and directly influenced the scientific realism pursued in Interstellar while reinforcing the plausibility of portals in Stargate.",
             "reference" : "Morris, M.S. and Thorne, K.S. (1988) “Wormholes in Spacetime and Their Use for Interstellar Travel”. American Journal of Physics."
         },
 
@@ -202,7 +202,7 @@
             "href": "#info17",
             "year": "1994",
             "image": "Timeline_Images/Warp_Drive.png",
-            "text": "In 1994, Miguel Alcubierre proposed a mathematical model in which space itself could contract in front of a spacecraft and expand behind it. This would allow effective faster-than-light travel without locally breaking Einstein’s speed limit. The idea formalised a concept long used in Star Trek and resembles the displacement-style drives imagined in Alien, bringing fictional warp travel into the language of general relativity."
+            "text": "In 1994, Miguel Alcubierre proposed a mathematical model in which space itself could contract in front of a spacecraft and expand behind it. This would allow effective faster-than-light travel without locally breaking Einstein’s speed limit. The idea formalised a concept long used in Star Trek and resembles the displacement-style drives imagined in Alien, bringing fictional warp travel into the language of general relativity.",
             "reference" : "Alcubierre, M. (1994) “The Warp Drive: Hyper-Fast Travel Within General Relativity”. Classical and Quantum Gravity."
         },
 
@@ -252,7 +252,7 @@
             "href": "#info18",
             "year": "2015",
             "image": "Timeline_Images/Gravitational_Waves.png",
-            "text": "In 2015, scientists directly detected gravitational waves produced by merging black holes. This confirmed one of general relativity's most dramatic predictions. The extreme spacetime distortions depicted in Interstellar are grounded in the same theory that LIGO (Laser Interferometer Gavitational-Wave Observatory) later verified observationally."
+            "text": "In 2015, scientists directly detected gravitational waves produced by merging black holes. This confirmed one of general relativity's most dramatic predictions. The extreme spacetime distortions depicted in Interstellar are grounded in the same theory that LIGO (Laser Interferometer Gavitational-Wave Observatory) later verified observationally.",
             "reference" : "Abbott, B.P. et al. (LIGO Scientific Collaboration and Virgo Collaboration) (2016) “Observation of Gravitational Waves from a Binary Black Hole Merger”. Physical Review Letters."
         },
 
@@ -274,7 +274,7 @@
             "href": "#info19",
             "year": "2019",
             "image": "Timeline_Images/Black_Hole.png",
-            "text": "In 2019, astronomers released the first image of a black hole's shadow, captured by the Event Horizon Telescope (EHT). The image demonstrated that objects like those portrayed in Interstellar are not purely speculative but real features of the universe. It marked a major milestone in observational astronomy, confirming key predictions about how gravity works  in the most extreme environments."
+            "text": "In 2019, astronomers released the first image of a black hole's shadow, captured by the Event Horizon Telescope (EHT). The image demonstrated that objects like those portrayed in Interstellar are not purely speculative but real features of the universe. It marked a major milestone in observational astronomy, confirming key predictions about how gravity works  in the most extreme environments.",
             "reference" : "Event Horizon Telescope Collaboration (2019) “First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole”. Astrophysical Journal Letters."
         }
     ]
