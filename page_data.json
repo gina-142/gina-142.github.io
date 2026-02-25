@@ -119,7 +119,19 @@
             "image": "Timeline_Images/2001.jpg",
             "text": "2001: A Space Odyssey, the landmark collaboration between director Stanley Kubrick and sci-fi novelist Arthur C. Clarke, is at its core a philosophical examination of human evolution grounded in scientific realism. Guided by a mysterious monolith discovered on the moon, a mission is sent to Jupiter – unbeknownst to the crew – to follow a signal. The journey highlights the physical constraints of deep-space travel: The transit time is 9 months, so hibernation is used to conserve life-support resources. The film foreshadows today’s speculations surrounding AI risk. After wrongly indicating a ship fault, HAL 9000, the ship’s onboard, AI kills Dr. Frank Poole by ramming him with an EVA space pod during a spacewalk. He then withdraws life support from the remaining crewmembers, leaving Dave Bowman as the last surviving crewmember to turn him off. The film is noted for its limited dialogue and accurate depiction of orbital mechanics. Rotating ships are also used to simulate gravity through centripetal acceleration. Much of the film is spent in total silence, denoting the vacuum of space. The film begins in deep prehistory, depicting early hominins encountering a monolith in the savannah. It is more fleshed out in the book, but the monoliths are implied to be the work of a superintelligent post-biological species guiding humanity towards a higher evolutionary stage. Technological progress, from the development of primitive tools to nuclear weapons, to interplanetary travel is seen to be part of the natural trajectory of evolutionary ascension. In the final act, Bowman enters into a monolith-triggered portal near Jupiter, undergoes a journey through unknown deep space and transforms into the “Star Child”. It is not clear what this means, but Clarke merges speculative cosmology with evolutionary symbolism. The film is therefore recognised for its skilful combination of hard science fiction – rooted in realistic physics – with philosophical, abstract and metaphysical elements. It remains one of the most influential works of hard science fiction."
          },
+        {
+            "id": "Apollo 13",
+            "case_type": "minor_study",
+            "name": "info15",
+            "href": "#info15",
+            "year": "1970",
+            "image": "Timeline_Images/Apollo_13.webp",
+            "text": ""
+            "spotify_embed": "https://open.spotify.com/embed/track/72Z17vmmeQKAg8bptWvpVG?utm_source=generator"
+        }, 
 
+
+            
         {
             "id": "Apollo 13",
             "case_type": "minor_study",
