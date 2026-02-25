@@ -5,8 +5,8 @@ fetch("page_data.json")
   .then(res => res.json())
   .then(data => {
     const timeline = document.getElementById("timeline");
-    const spacing = 30;
-    const minStep = 40; // minimum vertical step to enforce global order
+    const spineSpacing = 80;
+    const sideSpacing = 30;
 
     const bubbles = data.events.map((event, index) => {
       const a = document.createElement("a");
@@ -68,39 +68,31 @@ fetch("page_data.json")
     }
 
     function positionBubbles() {
+      let previousSpineY = 0;
       let leftBottom = 0;
       let rightBottom = 0;
-      let previousTop = 0;
 
       bubbles.forEach((bubble, index) => {
         const isLeft = bubble.classList.contains("left");
+        const bubbleHeight = bubble.offsetHeight;
+
         const sideBottom = isLeft ? leftBottom : rightBottom;
+        let spineY = index === 0 ? bubbleHeight / 2 : previousSpineY + spineSpacing;
 
-        let top;
+        const minSpineForSide = sideBottom + (bubbleHeight / 2) + sideSpacing;
+        spineY = Math.max(spineY, minSpineForSide);
 
-        if (index === 0) {
-          top = 0;
-        } else {
-          top = Math.max(sideBottom, previousTop + minStep);
-        }
-
+        const top = spineY - (bubbleHeight / 2);
         bubble.style.top = `${top}px`;
 
-        const newBottom = top + bubble.offsetHeight + spacing;
+        const newBottom = top + bubbleHeight;
+        if (isLeft) leftBottom = newBottom;
+        else rightBottom = newBottom;
 
-        if (isLeft) {
-          leftBottom = newBottom;
-        } else {
-          rightBottom = newBottom;
-        }
-
-        previousTop = top;
-
-        // Connector calculation
+        previousSpineY = spineY;
         const timelineRect = timeline.getBoundingClientRect();
         const centerX = timelineRect.left + timelineRect.width / 2;
         const bubbleRect = bubble.getBoundingClientRect();
-
         const connectorWidth = isLeft
           ? centerX - bubbleRect.right
           : bubbleRect.left - centerX;
@@ -108,7 +100,7 @@ fetch("page_data.json")
         bubble.style.setProperty("--connector-width", `${connectorWidth}px`);
       });
 
-      timeline.style.height = `${Math.max(leftBottom, rightBottom)}px`;
+      timeline.style.height = `${Math.max(leftBottom, rightBottom) + 100}px`;
     }
   })
   .catch(err => console.error(err));
