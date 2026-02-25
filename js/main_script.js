@@ -31,8 +31,20 @@ fetch("page_data.json")
 
       let inner;
       if (event.case_type === "major_study") {
-        inner = document.createElement("p");
-        inner.textContent = event.text;
+        //have both text...
+        inner = document.createElement("div");
+        const inner_text = document.createElement("p");
+        inner_text.textContent = event.text;
+        //...and image...
+        const inner_img = document.createElement("img");
+        inner_img.src = event.image;
+        inner_img.style.borderRadius = "6px";
+        inner_img.style.margin = "10px auto 0 auto";
+        inner_img.style.display = "block";
+        inner_img.style.maxWidth = event.vertical ? "220px" : "320px";
+        //...in the same bubble
+        inner.appendChild(inner_img);
+        inner.appendChild(inner_text);
       } else {
         inner = document.createElement("img");
         inner.src = event.image;
