@@ -765,6 +765,10 @@ body.star-trek .section-menu a:hover {
     background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); 
 }
 
+body.star-trek sup {
+  color: #6bdfff;
+}
+
 
 
 #sidebar a, #vernesidebar a {
