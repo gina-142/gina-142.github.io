@@ -35,7 +35,7 @@
             "name": "info10",
             "href": "#info10",
             "year": "1905",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/Special_Relativity.png",
             "text": "In the 1905 paper Einstein established that the speed of light is a universal speed limit that is constant in all inertial frames. In order for this to be true time dilation and length contraction followed, meaning that time slows down as you speed up and distances contract. His research reshaped our understanding of space and time as being malleable and most importantly it put a limit on space travel: nothing with mas can travel faster than light, providing a massive bump in the road for science fiction authors striving to stay true to the real physics. "
         },
 
@@ -45,7 +45,7 @@
             "name": "info11",
             "href": "#info11",
             "year": "1915",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/General_Relativity.png",
             "text": "Ten years after his paper on Special Relativity, Einstein reformulated the idea of gravity as being the geometry of spacetime itself. He demonstrated that mass and energy curve spacetime, and matter then follows that curvature. This theory led to the prediction of gravitational waves, black holes, and mathematically, wormholes."
         },
 
