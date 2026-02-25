@@ -39,9 +39,10 @@ fetch("page_data.json")
         const inner_img = document.createElement("img");
         inner_img.src = event.image;
         inner_img.style.borderRadius = "6px";
-        inner_img.style.margin = "10px auto 0 auto";
+        inner_img.style.marginTop = "10px";
         inner_img.style.display = "block";
-        inner_img.style.maxWidth = event.vertical ? "220px" : "320px";
+        inner_img.style.width = "100%";
+        inner_img.style.height = "auto";
         //...in the same bubble
         inner.appendChild(inner_img);
         inner.appendChild(inner_text);
