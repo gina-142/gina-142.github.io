@@ -92,7 +92,7 @@
             "case_type": "minor_study",
             "name": "info12",
             "href": "#info12",
-            "year": "1915",
+            "year": "1916",
             "image": "Timeline_Images/Schwarzschild_Radius.png",
             "text": "Shortly after general relativity was published, Karl Schwarzschild found a solution describing what we now recognise as a black hole. This introduced the idea of an event horizon; a boundary beyond which nothing can escape. Black holes, central to Interstellar and referenced in darker science fiction such as Event Horizon, emerged from this mathematical breakthrough.",
             "reference" : "Schwarzschild, K. (1916) “On the Gravitational Field of a Mass Point According to Einstein’s Theory”. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften (Berlin)."
@@ -130,7 +130,16 @@
             "text": "In 1948, Hendrik Casimir predicted that quantum effect could produce small regions of negative energy between closely space metal plates. Although the effects were small, it demonstrated that exotic energy conditions are not purely fictional. Future proposals of traversable wormholes, such as in Star Trek, and warp drives rely on forms of negative energy.",
             "reference" : "Casimir, H.B.G. (1948) “On the Attraction Between Two Perfectly Conducting Plates”. Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen."
         },
-
+        {
+            "id": "Sputnik 1",
+            "case_type": "minor_study",
+            "name": "info124",
+            "href": "#info24",
+            "year": "1957",
+            "image": "Timeline_Images/Casimir_Effect.png",
+            "text": "Sputnik 1 was launched on the 4th October 1957 by the Soviet Union. It was a small metal sphere, only 58 cm in diameter, but it was the first artificial satellite and the first human made object to orbit the Earth. Orbiting every 96 minutes, its steady radio beeping could be picked up by operators around the world. For the first time, something built by humans was circling the planet rather than falling back to it. The mathematics of orbital motion had become physical reality. Sputnik carried no crew and no cameras, only a transmitter, but it marked the moment space travel shifted from imagination to engineering. ",
+            "reference" : "Siddiqi, A. (2000) Challenge to Apollo: The Soviet Union and the Space Race, 1945-1974. NASA History Series."
+        },
         {
             "id": "Dune",
             "case_type": "minor_study",
