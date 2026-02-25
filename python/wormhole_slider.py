@@ -2,10 +2,6 @@ import numpy as np
 import plotly.graph_objects as go
 
 def wormhole_embedding(b0=1.0, r_max=6.0, n_r=220, n_phi=220):
-    """
-    Morris–Thorne wormhole embedding diagram for b(r)=b0^2/r:
-      z(r) = ± b0 * arcosh(r/b0)
-    """
     r = np.linspace(b0 * 1.0001, r_max, n_r)  # avoid exactly r=b0
     phi = np.linspace(0, 2*np.pi, n_phi)
     R, PHI = np.meshgrid(r, phi)
@@ -15,11 +11,11 @@ def wormhole_embedding(b0=1.0, r_max=6.0, n_r=220, n_phi=220):
     Y = R * np.sin(PHI)
     return X, Y, Z
 
-# Choose slider values for throat radius b0
+
 b0_values = [0.6, 0.8, 1.0, 1.3, 1.6, 2.0]
 r_max = 6.0
 
-# Build frames 
+ 
 frames = []
 for b0 in b0_values:
     X, Y, Z_top = wormhole_embedding(b0=b0, r_max=r_max)
@@ -34,13 +30,13 @@ for b0 in b0_values:
         )
     )
 
-# Start on b0=1.0 if available, else first
+
 start_b0 = 1.0 if 1.0 in b0_values else b0_values[0]
 start_frame = next(f for f in frames if f.name == f"b0={start_b0}")
 
 fig = go.Figure(data=start_frame.data, frames=frames)
 
-# Slider steps: jump to a frame
+
 steps = []
 for b0 in b0_values:
     steps.append(
