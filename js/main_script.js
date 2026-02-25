@@ -16,7 +16,6 @@ fetch("page_data.json")
       if (event.case_type === "major_study") {
         a.href = event.href;
       } else {
-        // Must match modal ID
         a.dataset.popup = `#${event.name}`;
       }
 
@@ -40,7 +39,11 @@ fetch("page_data.json")
         inner.style.borderRadius = "6px";
         inner.style.margin = "10px auto 0 auto"; // center the image
         inner.style.display = "block";
-        inner.style.maxWidth = "220px";
+        if (event.vertical) {
+            inner.style.maxWidth = "220px";     
+        } else {
+            inner.style.maxWidth = "320px";  
+        }
       }
 
       content.appendChild(inner);
@@ -51,7 +54,6 @@ fetch("page_data.json")
       return bubble;
     });
 
-    // Wait for images to load
     const images = timeline.getElementsByTagName("img");
     const totalImages = images.length;
     if (totalImages === 0) {
@@ -110,8 +112,8 @@ fetch("page_data.json")
       if (event.case_type === "minor_study") {
         const modal = document.createElement("div");
         modal.className = "modal";
-        modal.id = event.name;           // Must match data-popup
-        modal.style.display = "none";    // hide by default
+        modal.id = event.name;
+        modal.style.display = "none";
 
         const content = document.createElement("div");
         content.className = "modal-content";
@@ -120,7 +122,7 @@ fetch("page_data.json")
         close.className = "close";
         close.innerHTML = "&times;";
         close.setAttribute("aria-label","Close");
-        close.onclick = () => modal.style.display = "none"; // close button
+        close.onclick = () => modal.style.display = "none";
 
         const title = document.createElement("h2");
         title.textContent = event.id;
@@ -149,10 +151,8 @@ document.addEventListener('click', (e) => {
     const modal = document.querySelector(link.dataset.popup);
     if (!modal) return;
 
-    // Show modal
     modal.style.display = "block";
 
-    // Click outside modal to close
     const clickOutside = (event) => {
       if (event.target === modal) {
         modal.style.display = "none";
@@ -161,7 +161,5 @@ document.addEventListener('click', (e) => {
     };
     window.addEventListener('click', clickOutside);
   } else {
-    // Major studies: normal navigation
-    // window.location.assign(link.href);
   }
 });

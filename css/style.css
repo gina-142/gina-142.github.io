@@ -411,7 +411,7 @@ body {
 
 /* Minor study cards — subtle silver outline */
 a[data-case-type="minor_study"] .bubble {
-  max-width: 350px;
+  max-width: 450px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
 }
