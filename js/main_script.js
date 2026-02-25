@@ -40,9 +40,11 @@ fetch("page_data.json")
         inner_img.src = event.image;
         inner_img.style.borderRadius = "6px";
         inner_img.style.marginTop = "10px";
+        inner_img.style.marginBottom = "20px";
         inner_img.style.display = "block";
         inner_img.style.width = "100%";
         inner_img.style.height = "auto";
+        inner_img.style.maxWidth = "380px";
         //...in the same bubble
         inner.appendChild(inner_img);
         inner.appendChild(inner_text);
