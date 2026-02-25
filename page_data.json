@@ -157,7 +157,7 @@
             "name": "info3",
             "href": "#info3",
             "year": "1994",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/stargate.png",
             "text": "In the Stargate universe, most interstellar travel takes place through the eponymous stargates, fixed wormholes just a few metres wide that allow for instantaneous travel from one place to another."
         },
 
@@ -206,7 +206,7 @@
             "name": "info4",
             "href": "#info4",
             "year": "2016",
-            "image": "Timeline_Images/Image_Placeholder.png",
+            "image": "Timeline_Images/the_expanse.png",
             "text": "Starting from a foundation of scientific realism, spaceships in the early series of The Expanse are propelled by a fusion propulsion drive called the Epstein Drive, the slow speed of which limits space travel to within the asteroid belt. However, the discovery of alien Ring Gates like those in the Stargate series allows ships to travel to other gates across the galaxy faster than light, through a hub known as the 'Slow Zone'."
         },
 
