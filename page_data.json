@@ -93,6 +93,18 @@
             "reference": "Image: Public domain, via Wikimedia Commons"
         },
 
+
+        {
+            "id": "The War of the Worlds",
+            "case_type": "minor_study",
+            "name": "info2555533",
+            "href": "#info2555533",
+            "year": "1898",
+            "image": "Timeline_Images/WoW.jpg",
+            "text": "The War of the Worlds tells a darker tale of spaceflight. It is used as a means of conquest by Martians, who land in Surrey. Using 'heat rays' and 'black smoke' the Martians engage in a systematic slaughter of humanity. They are only thwarted by a microbial infection to which they have no immunity. Jeff Wayne has produced a popular musical adaptation.",
+            "reference": "Henrique Alvim Corrêa, Public domain, via Wikimedia Commons"
+        },
+
         {
             "id": "A Trip to the Moon",
             "case_type": "minor_study",
