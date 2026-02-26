@@ -353,6 +353,17 @@
         },
 
         {
+            "id": "Assembly of the ISS",
+            "case_type": "minor_study",
+            "name": "info234",
+            "href": "#info234",
+            "year": "1998",
+            "image": "Timeline_Images/space_station.jpg",
+            "text": "The largest ever international collaborative effort in space, the International Space Station was assembled in low Earth orbit around the core of the cancelled Soviet space station Mir-2. Since the 2nd of November 2000 it has been continuously occupied by a total of over 290 astronauts, and has hosted hundreds of experiments into microgravity effects that could not be undertaken on Earth, as well as several diplomatic events. Although originally intended to be decommissioned after a 15-year mission, the lifespan has been repeatedly extended as it continues to gain wide support, and is now expected to be maintained until at least 2030.",
+            "reference": "Image: Public domain via Wikimedia Commons, originally from NASA"
+        },
+
+        {
             "id": "The Three Body Problem",
             "case_type": "minor_study",
             "name": "info6",
