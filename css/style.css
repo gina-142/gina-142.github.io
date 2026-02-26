@@ -569,10 +569,10 @@ a[data-case-type="major_study"] .content:hover {
     font-style: italic;
     font-size: 0.9em;
     line-height: 1.7;
-    margin: 40px auto;        /* center the box */
-    padding: 25px 35px;       /* space inside box */
+    margin: 40px auto;
+    padding: 25px 35px;
 
-    max-width: 800px;         /* keeps it readable */
+    max-width: 800px;
     background-color: #ffffff; /* slightly lighter than page */
     border-left: 6px solid #4a2013;  /* accent bar */
 
@@ -638,13 +638,14 @@ a[data-case-type="major_study"] .content:hover {
   max-height: 600px;
   width: auto;   /* adjust size if you like */
   height: 100%;
-  border-radius: 8px; /* optional, looks nice */
+  border-radius: 8px;
 }
 
 .center-image figcaption {
-  margin-top: 10px;
+  margin: 10px auto 0;
   font-size: 0.9em;
   color: #000000;
+  max-width: 80%;
 }
 
 .aacenter-image {
