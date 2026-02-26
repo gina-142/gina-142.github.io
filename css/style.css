@@ -573,15 +573,15 @@ a[data-case-type="major_study"] .content:hover {
     padding: 25px 35px;
 
     max-width: 800px;
-    background-color: #ffffff; /* slightly lighter than page */
-    border-left: 6px solid #4a2013;  /* accent bar */
+    background-color: #ffffff; 
+    border-left: 6px solid #4a2013;  
 
 }
 
 
 .section-menu {
     display: flex;
-    flex-wrap: nowrap;  /* Prevent wrapping to next line */
+    flex-wrap: nowrap;  
     width: 100%;
     margin-bottom: 40px;
 }
@@ -591,7 +591,7 @@ a[data-case-type="major_study"] .content:hover {
     position: fixed;
     top: 90px;
     left: 200px;
-    width: calc(100% - 200px);   /* subtract sidebar width */
+    width: calc(100% - 200px);   
     z-index: 999;
     background: #f4f4f4;
     border-bottom: 1px solid black;
@@ -599,19 +599,19 @@ a[data-case-type="major_study"] .content:hover {
 }
 
 .section-menu a {
-    flex: 1;       /* make all links equal width */
+    flex: 1;     
     min-width: 0;
-    padding: 15px 5px;   /* vertical + horizontal padding */
-    text-align: center;   /* center the text */
+    padding: 15px 5px; 
+    text-align: center; 
     text-decoration: none; 
     font-weight: bold;
-    background: #f4f4f4;  /* menu background */
+    background: #f4f4f4;  
     border: 2px solid black; 
     color: black;
-    box-sizing: border-box; /* include border in width */
+    box-sizing: border-box; 
 }
 
-/* Prevent doubled borders */
+
 .section-menu a + a {
     border-left: none;
 }
@@ -636,7 +636,7 @@ a[data-case-type="major_study"] .content:hover {
 
 .center-image img {
   max-height: 600px;
-  width: auto;   /* adjust size if you like */
+  width: auto;  
   height: 100%;
   border-radius: 8px;
 }
@@ -654,13 +654,13 @@ a[data-case-type="major_study"] .content:hover {
 }
 
 .aacenter-image img {
-  max-height: 600px;   /* control size */
+  max-height: 600px;   
   width: auto;
   height: 100%;
-  border: 3px double #2b1a14;      /* double line border, dark “ink” color */
-  border-radius: 6px;              /* slightly rounded corners */
-  padding: 4px;                     /* space between image and border */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* subtle shadow for depth */
+  border: 3px double #2b1a14;      
+  border-radius: 6px;              
+  padding: 4px;                     
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  
   background-color: #f4e8de;
 }
 
@@ -682,13 +682,13 @@ a[data-case-type="major_study"] .content:hover {
 }
 
 .image-row img {
-  max-height: 600px;   /* control size */
+  max-height: 600px;   
   width: auto;
   height: 100%;
-  border: 3px double #2b1a14;      /* double line border, dark “ink” color */
-  border-radius: 6px;              /* slightly rounded corners */
-  padding: 4px;                     /* space between image and border */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* subtle shadow for depth */
+  border: 3px double #2b1a14;      
+  border-radius: 6px;             
+  padding: 4px;              
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  
   background-color: #f4e8de;
 }
 
@@ -1032,14 +1032,13 @@ body.interstellar .big-quote p {
     margin: 6px 0;
 }
 
-/* --- Superscript references --- */
 body.interstellar sup {
     color: #6494ed;
     font-weight: 600;
     font-size: 0.75em;
 }
 
-/* --- Image styling --- */
+
 body.interstellar .interstellar-image {
   text-align: center;
   margin: 50px 0;
@@ -1170,12 +1169,6 @@ body.interstellar ::selection {
 }
 
 
-/* ============================================================
-   SPACEFLIGHT THEME — Home, Physical Primers, Ask the Experts
-   Rocket-orange (#e8791a) accents on deep navy (#0d1b2a).
-   Distinct from Interstellar (near-black + cold blue).
-   ============================================================ */
-
 body.spaceflight {
   background-color: #1a3050;
   background-image:
@@ -1193,7 +1186,7 @@ body.spaceflight {
   margin: 0;
 }
 
-/* Title bar */
+
 body.spaceflight #title,
 body.spaceflight #vernetitle {
   background: linear-gradient(90deg, #0e1e30 0%, #1a3254 60%, #10203a 100%);
@@ -1205,7 +1198,7 @@ body.spaceflight #vernetitle {
   box-shadow: 0 2px 30px rgba(232, 121, 26, 0.2);
 }
 
-/* Sidebar */
+
 body.spaceflight #sidebar,
 body.spaceflight #vernesidebar {
   background: linear-gradient(180deg, #0b1826 0%, #12243a 100%);
@@ -1237,13 +1230,13 @@ body.spaceflight #vernesidebar a.active {
   border-left-color: #e8791a;
 }
 
-/* Main content */
+
 body.spaceflight #main {
   margin-left: 200px;
   padding: 160px 60px 80px 60px;
   color: #c8d6e0;
   font-family: 'Exo 2', sans-serif;
-  font-size: 0.95em;
+  font-size: 0.85em;
   line-height: 1.85;
 }
 
@@ -1371,7 +1364,7 @@ body.spaceflight #GenAI h1 {
   margin-bottom: 12px;
 }
 
-/* Ask the Experts — iframe frame */
+
 body.spaceflight #main iframe {
   border: 1px solid rgba(232, 121, 26, 0.3);
   border-radius: 10px;
@@ -1387,7 +1380,7 @@ body.spaceflight ::selection {
   color: #ffffff;
 }
 
-/* Big-quote block */
+
 body.spaceflight .big-quote {
   background: rgba(14, 30, 53, 0.65);
   border-left: 4px solid rgba(232, 121, 26, 0.55);
@@ -1400,7 +1393,7 @@ body.spaceflight .big-quote {
   line-height: 1.8;
 }
 
-/* aacenter-image figure — used in primers_2 and primers_3 */
+
 body.spaceflight .aacenter-image img {
   border: 2px solid rgba(232, 121, 26, 0.25);
   border-radius: 4px;
