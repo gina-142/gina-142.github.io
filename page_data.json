@@ -80,6 +80,19 @@
             "reference": "Image: Cover of 'Across the Zodiac', uncredited, public domain"
         },
 
+
+
+        {
+            "id": "Turner's Frontier Thesis",
+            "case_type": "minor_study",
+            "name": "info25555",
+            "href": "#info25555",
+            "year": "1893",
+            "image": "Timeline_Images/Frederick_Jackson_Turner.jpg",
+            "text": "Frederick Jackson Turner's controversial Frontier Thesis proposes, through the process of expansion into the Western frontier, American society developed uniquely, creating a democratic individualistic character, separate from its European origins. It is often critiqued due to its colonialist undertones, but is often applied to science fiction. That may be implicit, such as in the rhetoric of Kennedy or Captain Kirk, but Robert Zubrin has applied it explicitly in his work. Roger Launius, in our interview, goes into greater depth...",
+            "reference": "Image: Public domain, via Wikimedia Commons"
+        },
+
         {
             "id": "A Trip to the Moon",
             "case_type": "minor_study",
