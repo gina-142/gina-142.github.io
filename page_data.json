@@ -226,6 +226,17 @@
         },
 
         {
+            "id": "Star Wars",
+            "case_type": "minor_study",
+            "name": "info26",
+            "href": "#info26",
+            "year": "1977",
+            "image": "Timeline_Images/star_wars.jpg",
+            "text": "Since the release of the original film, Star Wars has been one of the most successful media franchises of all time, bringing sci-fi comfortably into the mainstream. The physics behind the spaceflight in Star Wars has been kept deliberately vague, but we do know it depends on a device called a 'hyperdrive' that allows travel through 'hyperspace', which is variously referred to as an alternate universe, a higher spatial dimension, or simply the universe as viewed when travelling faster than light.",
+            "reference" : "Image: Promotional poster for 'Star Wars' © Twentieth Century Fox (1977), used under fair use for educational purposes"
+        },
+
+        {
             "id": "Alien",
             "case_type": "minor_study",
             "name": "info5",
