@@ -127,6 +127,17 @@
         },
 
         {
+            "id": "Red Star",
+            "case_type": "minor_study",
+            "name": "info10000",
+            "href": "#info10000",
+            "year": "1908",
+            "image": "Timeline_Images/Red_Starr.jpg",
+            "text": "Alexander Bogdanov's 1908 novel tells the story of Leonid, a Russian scientist and revolutionary who visits a Communist society on Mars. He uses an atomic powered space ship. It highlights the interplay between geopolitics, political philosophy and science. Spaceflight is means through which the Communist utopia may be realised.",
+            "reference" : "Public domain via Wikimedia Commons"
+        },
+
+        {
             "id": "General Relativity",
             "case_type": "minor_study",
             "name": "info11",
