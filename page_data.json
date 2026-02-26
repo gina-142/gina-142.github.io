@@ -22,7 +22,18 @@
             "text": "In 1608, though it was published posthumously in 1934, Kepler wrote his Somnium - a title which translates to 'The Dream'. In it, he recounts a dream in which an Icelandic boy is visited to by a daemon, who tells him about the island of Levania, the Earth's moon. Isaac Asimov and Arthur C. Clark have suggested that it is one of the earliest works of serious science fiction. It offers an account of what the Earth looks like from the moon.",
             "reference": "Image: Astronomia Nova by Johannes Kepler, public domain"
         },
-        
+
+        {
+            "id": "Comical History of the States and Empires of the Moon",
+            "case_type": "minor_study",
+            "name": "info27",
+            "href": "#info27",
+            "year": "1657",
+            "vertical": "YES",
+            "image": "Timeline_Images/Cyrano.jpg",
+            "text": "Cyrano de Bergerac's work 'Comical History of the States and Empires of the Moon' was published posthumously in 1657. It depicts Cyrano's fictional journey to the moon. He initially tries to fly by strapping bottles of dew to himself, but subsequently falls back to Earth. He then tries again, and manages to reach the moon using a rocket. Arthur C. Clarke notes that it is the earliest known depiction of the use of rockets for space travel. On the moon, Cyrano encounters the lunar inhabitants, who have names composed of musical notes. He also encounters the ghost of Socrates.",
+            "reference": "Public domain via Wikimedia Commons"
+        },
         
         {
             "id": "Escape Velocity and Universal Gravitation",
@@ -123,6 +134,19 @@
             "reference" : "Einstein, A. and Rosen, N. (1935) “The Particle Problem in the General Theory of Relativity”. Physical Review."
         },
 
+        {
+            "id": "The legendary Sir Brian May is born",
+            "case_type": "minor_study",
+            "name": "info141",
+            "href": "#info141",
+            "year": "1947",
+            "image": "Timeline_Images/Brian_May_mdp.jpg",
+            "text": "In 1947, the astrophysicist, stereophotographer, animal rights activist, knight, Queen lead guitarist Brian May was born. He famously incorporated his physics background into the Queen song '39. Though it is slightly overshadowed by other hits such as 'Bohemian Rhapsody' and 'You're My Best Friend' it earns its rightful, poetic place on the album, and is unusual in that it is one of the few songs where May sings lead vocals. It depicts a group of spacetravellers who grapple with the effects of relativistic time dilation when, upon their return from a long haul journey, their families have aged and died. Sir Brian completed his PhD in astrophysics at Imperial College London in 2007, and continues to promote astronomy and physics, having started the Starmus festival.",
+            "reference" : "Scanned from Gente magazine, Public domain, via Wikimedia Commons"
+        },
+
+
+        
         {
             "id": "The Casimir Effect",
             "case_type": "minor_study",
