@@ -193,6 +193,18 @@
             "reference" : "NASA (n.d.) Sputnik 1 (1957). Image courtesy of NASA, public domain. Available at: https://www.nasa.gov/wp-content/uploads/static/history/sputnik/sputnik1.jpg (Accessed: 26 February 2026)."
             
         },
+
+        {
+            "id": "Yuri Gagarin goes to space",
+            "case_type": "minor_study",
+            "name": "info224",
+            "href": "#info224",
+            "year": "1961",
+            "image": "Timeline_Images/yuri_gagarin.jpg",
+            "text": "On the 12th of April 1961, Yuri Gagarin became the first man in space, orbiting the Earth for 108 minutes in the Vostok 1 capsule before successfully landing in Kazakhstan. His flight made him an international celebrity and proved it was possible for humans to survive space travel.",
+            "reference": "Image: Photo of Gagarin in the Vostok 1 spacecraft, © Roscosmos"
+        },
+        
         {
             "id": "Dune",
             "case_type": "minor_study",
