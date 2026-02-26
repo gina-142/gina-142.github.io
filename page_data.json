@@ -88,7 +88,7 @@
             "year": "1902",
             "image": "Timeline_Images/a_trip_to_the_moon.jpg",
             "text": "Although originally fading into obscurity, Le Voyage dans la Lune (A Trip to the Moon) has become one of the most iconic pieces in cinema history, as few films had ever featured fantasy for entertainment purposes before this time. Inspired by Verne's 'From the Earth to the Moon', the film depicts a bullet-like spaceship being shot out of a cannon and landing safely on a highly-stylised lunar surface, the visual grammar of which would shape sci-fi in the movies for decades to come.",
-            "reference": "Public domain via Wikimedia Commons"
+            "reference": "Image: Public domain via Wikimedia Commons"
         },
 
         {
@@ -267,8 +267,10 @@
             "name": "info300",
             "href": "#info300",
             "year": "1977",
-            "image": "",
-            "text": "The Voyager program consisted"
+            "image": "Timeline_Images/Voyager.jpg",
+            "vertical": "YES",
+            "text": "The Voyager program consisted of two probes, Voyager 1 and Voyager 2, that were launched into space consecutively, with the aim of exploring the outer planets of our solar system. The mission utilised a planetry alignment that occurs once overy 175 years. The planetary exploration included study of Saturn's moon Titan and discovery of active volcanoes on Jupiter's moon Io. Following their mission, both probes entered interstellar space, continuing to send data back to Earth, although now due to power contraints, data is limited and their cameras are off. Voyager was a significant step in space travel, being the first human made objects to reach interstellar space.",
+            "reference": "Image: Public domain via Wikimedia Commons"
         },
 
         {
