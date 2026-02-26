@@ -11,6 +11,13 @@ body {
   padding-right: 30px;
 } 
 
+#GenAI {
+  padding-top: 20px;
+  padding-left: 230px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+} 
+
 #title {
   position: fixed;
   padding-left: 220px;
