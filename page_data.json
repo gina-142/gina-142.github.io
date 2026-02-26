@@ -22,7 +22,18 @@
             "text": "In 1608, though it was published posthumously in 1934, Kepler wrote his Somnium - a title which translates to 'The Dream'. In it, he recounts a dream in which an Icelandic boy is visited to by a daemon, who tells him about the island of Levania, the Earth's moon. Isaac Asimov and Arthur C. Clark have suggested that it is one of the earliest works of serious science fiction. It offers an account of what the Earth looks like from the moon.",
             "reference": "Image: Astronomia Nova by Johannes Kepler, public domain"
         },
-        
+
+        {
+            "id": "Comical History of the States and Empires of the Moon",
+            "case_type": "minor_study",
+            "name": "info27",
+            "href": "#info27",
+            "year": "1657",
+            "vertical": "YES",
+            "image": "Timeline_Images/Cyrano.jpg",
+            "text": "Cyrano de Bergerac's work 'Comical History of the States and Empires of the Moon' was published posthumously in 1657. It depicts Cyrano's fictional journey to the moon. He initially tries to fly by strapping bottles of dew to himself, but subsequently falls back to Earth. He then tries again, and manages to reach the moon using a rocket. Arthur C. Clarke notes that it is the earliest known depiction of the use of rockets for space travel. On the moon, Cyrano encounters the lunar inhabitants, who have names composed of musical notes. He also encounters the ghost of Socrates.",
+            "reference": "Public domain via Wikimedia Commons"
+        },
         
         {
             "id": "Escape Velocity and Universal Gravitation",
