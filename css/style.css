@@ -510,7 +510,6 @@ a[data-case-type="major_study"] .bubble {
   border-radius: 6px;
 }
 
-/* Connector lines to the central spine */
 .left::before {
   content: "";
   position: absolute;
@@ -734,8 +733,8 @@ a[data-case-type="major_study"] .content:hover {
 
 .image-row {
   display: flex;
-  justify-content: center;  /* centers the whole group */
-  gap: 30px;                /* space between images */
+  justify-content: center;
+  gap: 30px;
   margin: 40px 0;
 }
 
@@ -1214,7 +1213,7 @@ body.interstellar ::selection {
   padding: 30px 40px;
   max-width: 750px;
   background: rgba(255, 255, 255, 0.04);
-  border-left: 4px solid #c2b280; /* soft gold accent */
+  border-left: 4px solid #c2b280;
   backdrop-filter: blur(6px);
 }
 
@@ -1314,7 +1313,6 @@ body.spaceflight #main strong {
   color: #dce8f0;
 }
 
-/* Large inline headings in primers (e.g. <p style="font-size:1.8em"><strong>…</strong></p>) */
 body.spaceflight #main p[style*="font-size: 1.8em"] > strong,
 body.spaceflight #main p[style*="font-size: 1.5em"] > strong {
   color: #e8c49a;
