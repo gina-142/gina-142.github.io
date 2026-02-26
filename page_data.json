@@ -135,6 +135,19 @@
         },
 
         {
+            "id": "The legendary Brian May is born",
+            "case_type": "minor_study",
+            "name": "info141",
+            "href": "#info141",
+            "year": "1947",
+            "image": "Timeline_Images/Casimir_Effect.png",
+            "text": "In 1947, the astrophysicist, stereophotographer, animal rights activist, Queen lead guitarist Brian May was born. He famously incorporated his physics background into the Queen song '39. Though it is slightly overshadowed by other hits such as 'Bohemian Rhapsody' and 'You're My Best Friend' it earns its rightful, poetic place on the album, and is unusual in that it is one of the few songs where May sings lead vocals. It depicts a group of spacetravellers who grapple with the effects of relativistic time dilation when, upon their return from a long haul journey, their families have aged and died.",
+            "reference" : "Casimir, H.B.G. (1948) “On the Attraction Between Two Perfectly Conducting Plates”. Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen."
+        },
+
+
+        
+        {
             "id": "The Casimir Effect",
             "case_type": "minor_study",
             "name": "info14",
