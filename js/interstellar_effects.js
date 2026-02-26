@@ -1,8 +1,6 @@
-/* Interstellar page enhancements: canvas starfield + scroll-reveal */
 (function () {
   if (!document.body.classList.contains('interstellar')) return;
 
-  /* ---- Canvas starfield ---- */
   function drawStarfield() {
     const canvas = document.createElement('canvas');
     canvas.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:0;';
@@ -55,7 +53,6 @@
 
   drawStarfield();
 
-  /* ---- Scroll-reveal ---- */
   const targets = document.querySelectorAll(
     '#main > p, #main > .big-quote, #main > figure, ' +
     '#main > .interstellar-image, #main > .wormhole-slider-wrap, ' +
