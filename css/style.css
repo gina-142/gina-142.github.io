@@ -22,12 +22,12 @@ body {
   position: fixed;
   background-color: #6a879f;
   display: block;
+  padding-left: 220px;
   width: 100%;
   height: 60px;
   margin-top: 0;
   padding-top: 30px;
   z-index: 1000;
-  text-align: center;
   font-size: clamp(1rem, 4vw, 1.4rem);
 }
 
