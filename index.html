@@ -125,141 +125,184 @@
   <script src="js/effects.js"></script>
 
   
-  <script>
-    (function () {
-      var statements = [
-        { text: "Kip Thorne won the Nobel Prize in Physics for his work on gravitational waves.", fact: true,
-          explanation: "Thorne was awarded the Nobel Prize in Physics in 2017 — years after consulting on Interstellar. His theoretical work on gravitational waves was confirmed by the LIGO detector." },
-        { text: "In Interstellar, the wormhole is located near Mars.", fact: false,
-          explanation: "The wormhole is positioned near Saturn. Its proximity to a recognisable planet was a deliberate narrative choice, giving the crew a landmark for their journey." },
-        { text: "Jules Verne launched his characters to the Moon using a giant cannon.", fact: true,
-          explanation: "In From the Earth to the Moon (1865), the crew are fired from a colossal Columbiad cannon in Florida — a surprisingly accurate choice of launch site, if not launch method." },
-        { text: "Einstein's theory of special relativity permits faster-than-light travel.", fact: false,
-          explanation: "Special relativity shows that as an object with mass approaches the speed of light, the energy required becomes infinite. FTL travel for ordinary matter is therefore prohibited." },
-        { text: "A traversable wormhole requires exotic matter with negative energy density to remain open.", fact: true,
-          explanation: "The Morris-Thorne metric demonstrates that without exotic matter, gravity would force the wormhole throat to collapse — making it impassable." },
-        { text: "The Alcubierre warp drive is prohibited by Einstein's general relativity.", fact: false,
-          explanation: "The Alcubierre metric is actually a valid solution to Einstein's field equations. The problem is the exotic matter required — not the theory itself." },
-        { text: "The wormhole in Interstellar appears as a flat circular portal on screen.", fact: false,
-          explanation: "Thanks to accurate relativistic rendering by physicist Kip Thorne, the wormhole appears as a perfect sphere — light from behind it bends around all sides equally." },
-        { text: "Star Trek first aired on television in 1966.", fact: true,
-          explanation: "The Original Series premiered on NBC on 8 September 1966 and ran for three seasons, introducing warp drive, phasers, and the Prime Directive to popular culture." },
-        { text: "Escape velocity from Earth is approximately 11.2 km/s.", fact: true,
-          explanation: "Using v = √(2GM/r), the escape velocity at Earth's surface is about 11.2 km/s in an idealised scenario without air resistance."},
-        { text: "The rocket equation shows that increasing exhaust velocity makes rockets more efficient.", fact: true,
-          explanation: "A higher exhaust velocity directly increases the achievable change in velocity for the same mass ratio."},
-        { text: "A rocket can accelerate in space even if there is no air to push against.", fact: true,
-          explanation: "Rockets work by conservation of momentum. Expelling mass in one direction causes the rocket to gain momentum in the opposite direction so we don't need an atmosphere."},
-        { text: "Time dilation means that a fast-moving astronaut ages more quickly than someone on Earth.", fact: false,
-          explanation: "According to special relativity, a moving clock runs slower. The astronaut would age less than someone who remained stationary on Earth. },
-        { text: "As a spacecraft’s speed approaches the speed of light, the energy required to accelerate it continues to increase dramatically.", fact: true,
-          explanation: "As velocity approaches the speed of light, the Lorentz factor grows very large, meaning ever-increasing amounts of energy are required to increase speed further."}
-        { text: "In Dune, human navigators use a substance called Spice Melange to safely fold space.", fact: true,
-          explanation: "The Dune bubble explains that navigators consume the Spice Melange to foresee safe routes when folding spacetime."},
-        { text: "In Lensman, spaceships accelerate instantly without worrying about classical mechanics or relativity.", fact: true,
-          explanation: "The Lensman entry states that inertialess drives allow ships to accelerate beyond light speed without concern for relativity or classical mechanics."},
-        { text: "In 2001: A Space Odyssey, most scenes in space include loud engine noises for realism.", fact: false,
-          explanation: "The bubble notes that much of the film is spent in total silence to reflect the vacuum of space."},
-        { text: "In The Three-Body Problem, a payload is accelerated using a chain of nuclear explosions and a solar sail.", fact: true,
-          explanation: "The bubble explicitly states that roughly 300 nuclear explosions are used to transfer momentum to a solar sail."},
-        { text: "In Stargate, interstellar travel primarily takes place using small fixed wormholes only a few metres wide.", fact: true,
-          explanation: "The Stargate bubble describes fixed wormholes a few metres wide that allow instantaneous travel."},
-        { text: "In Alien, faster-than-light travel is achieved through hyperspace jumps into another dimension.", fact: false,
-          explanation: "The Alien bubble describes displacement drives that displace space and accelerate gradually, not hyperspace travel."},
-        { text: "In The Expanse, faster-than-light travel becomes possible only after the discovery of alien Ring Gates.", fact: true,
-          explanation: "The bubble explains that early travel is limited to fusion propulsion and FTL only occurs after Ring Gates are discovered."},
-        { text: "In Star Wars, the physics behind hyperspace travel is explained in detail in the films.", fact: false,
-          explanation: "The Star Wars bubble states that the physics is deliberately vague and depends on a device called a hyperdrive."}
-      ];
+<script>
+  (function () {
+    // === FULL QUESTION BANK ===
+    var questionBank = [
+      { text: "Kip Thorne won the Nobel Prize in Physics for his work on gravitational waves.", fact: true,
+        explanation: "Thorne was awarded the Nobel Prize in Physics in 2017 — years after consulting on Interstellar. His theoretical work on gravitational waves was confirmed by the LIGO detector." },
 
-      var current = 0, score = 0;
+      { text: "In Interstellar, the wormhole is located near Mars.", fact: false,
+        explanation: "The wormhole is positioned near Saturn. Its proximity to a recognisable planet was a deliberate narrative choice, giving the crew a landmark for their journey." },
 
-      var statementEl   = document.getElementById('ff-statement');
-      var factBtn       = document.getElementById('ff-fact-btn');
-      var fictionBtn    = document.getElementById('ff-fiction-btn');
-      var feedbackWrap  = document.getElementById('ff-feedback-wrap');
-      var verdictEl     = document.getElementById('ff-verdict');
-      var explanationEl = document.getElementById('ff-explanation');
-      var nextBtn       = document.getElementById('ff-next-btn');
-      var progressLabel = document.getElementById('ff-progress-label');
-      var progressFill  = document.getElementById('ff-progress-fill');
-      var card          = document.getElementById('ff-card');
-      var resultEl      = document.getElementById('ff-result');
-      var resultScore   = document.getElementById('ff-result-score');
-      var resultMsg     = document.getElementById('ff-result-msg');
-      var restartBtn    = document.getElementById('ff-restart-btn');
+      { text: "Jules Verne launched his characters to the Moon using a giant cannon.", fact: true,
+        explanation: "In From the Earth to the Moon (1865), the crew are fired from a colossal Columbiad cannon in Florida — a surprisingly accurate choice of launch site, if not launch method." },
 
-      function loadStatement() {
-        var s = statements[current];
-        feedbackWrap.style.display = 'none';
-        factBtn.disabled = false;
-        fictionBtn.disabled = false;
-        factBtn.className = '';
-        fictionBtn.className = '';
+      { text: "Einstein's theory of special relativity permits faster-than-light travel.", fact: false,
+        explanation: "Special relativity shows that as an object with mass approaches the speed of light, the energy required becomes infinite. FTL travel for ordinary matter is therefore prohibited." },
 
-        statementEl.style.opacity = 0;
-        statementEl.innerHTML = s.text;
+      { text: "A traversable wormhole requires exotic matter with negative energy density to remain open.", fact: true,
+        explanation: "The Morris-Thorne metric demonstrates that without exotic matter, gravity would force the wormhole throat to collapse — making it impassable." },
 
-        progressLabel.textContent = (current + 1) + ' / ' + statements.length;
-        progressFill.style.width = ((current / statements.length) * 100) + '%';
+      { text: "The Alcubierre warp drive is prohibited by Einstein's general relativity.", fact: false,
+        explanation: "The Alcubierre metric is actually a valid solution to Einstein's field equations. The problem is the exotic matter required — not the theory itself." },
 
-        setTimeout(function () { statementEl.style.opacity = 1; }, 50);
+      { text: "The wormhole in Interstellar appears as a flat circular portal on screen.", fact: false,
+        explanation: "Thanks to accurate relativistic rendering by physicist Kip Thorne, the wormhole appears as a perfect sphere — light from behind it bends around all sides equally." },
+
+      { text: "Star Trek first aired on television in 1966.", fact: true,
+        explanation: "The Original Series premiered on NBC on 8 September 1966 and ran for three seasons, introducing warp drive, phasers, and the Prime Directive to popular culture." },
+
+      { text: "Escape velocity from Earth is approximately 11.2 km/s.", fact: true,
+        explanation: "Using v = √(2GM/r), the escape velocity at Earth's surface is about 11.2 km/s in an idealised scenario without air resistance." },
+
+      { text: "The rocket equation shows that increasing exhaust velocity makes rockets more efficient.", fact: true,
+        explanation: "A higher exhaust velocity directly increases the achievable change in velocity for the same mass ratio." },
+
+      { text: "A rocket can accelerate in space even if there is no air to push against.", fact: true,
+        explanation: "Rockets work by conservation of momentum. Expelling mass in one direction causes the rocket to gain momentum in the opposite direction so we don't need an atmosphere." },
+
+      { text: "Time dilation means that a fast-moving astronaut ages more quickly than someone on Earth.", fact: false,
+        explanation: "According to special relativity, a moving clock runs slower. The astronaut would age less than someone who remained stationary on Earth." },
+
+      { text: "As a spacecraft’s speed approaches the speed of light, the energy required to accelerate it continues to increase dramatically.", fact: true,
+        explanation: "As velocity approaches the speed of light, the Lorentz factor grows very large, meaning ever-increasing amounts of energy are required to increase speed further." },
+
+      { text: "In Dune, human navigators use a substance called Spice Melange to safely fold space.", fact: true,
+        explanation: "The Dune bubble explains that navigators consume the Spice Melange to foresee safe routes when folding spacetime." },
+
+      { text: "In Lensman, spaceships accelerate instantly without worrying about classical mechanics or relativity.", fact: true,
+        explanation: "The Lensman entry states that inertialess drives allow ships to accelerate beyond light speed without concern for relativity or classical mechanics." },
+
+      { text: "In 2001: A Space Odyssey, most scenes in space include loud engine noises for realism.", fact: false,
+        explanation: "The bubble notes that much of the film is spent in total silence to reflect the vacuum of space." },
+
+      { text: "In The Three-Body Problem, a payload is accelerated using a chain of nuclear explosions and a solar sail.", fact: true,
+        explanation: "The bubble explicitly states that roughly 300 nuclear explosions are used to transfer momentum to a solar sail." },
+
+      { text: "In Stargate, interstellar travel primarily takes place using small fixed wormholes only a few metres wide.", fact: true,
+        explanation: "The Stargate bubble describes fixed wormholes a few metres wide that allow instantaneous travel." },
+
+      { text: "In Alien, faster-than-light travel is achieved through hyperspace jumps into another dimension.", fact: false,
+        explanation: "The Alien bubble describes displacement drives that displace space and accelerate gradually, not hyperspace travel." },
+
+      { text: "In The Expanse, faster-than-light travel becomes possible only after the discovery of alien Ring Gates.", fact: true,
+        explanation: "The bubble explains that early travel is limited to fusion propulsion and FTL only occurs after Ring Gates are discovered." },
+
+      { text: "In Star Wars, the physics behind hyperspace travel is explained in detail in the films.", fact: false,
+        explanation: "The Star Wars bubble states that the physics is deliberately vague and depends on a device called a hyperdrive." }
+    ];
+
+  
+    function pickRandomN(arr, n) {
+      // Fisher–Yates shuffle on a copy, then slice
+      var copy = arr.slice();
+      for (var i = copy.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = copy[i];
+        copy[i] = copy[j];
+        copy[j] = tmp;
+      }
+      return copy.slice(0, Math.min(n, copy.length));
+    }
+
+
+    var statements = pickRandomN(questionBank, 8);  // <- ONLY 8, different each run
+    var current = 0, score = 0;
+
+
+    var statementEl   = document.getElementById('ff-statement');
+    var factBtn       = document.getElementById('ff-fact-btn');
+    var fictionBtn    = document.getElementById('ff-fiction-btn');
+    var feedbackWrap  = document.getElementById('ff-feedback-wrap');
+    var verdictEl     = document.getElementById('ff-verdict');
+    var explanationEl = document.getElementById('ff-explanation');
+    var nextBtn       = document.getElementById('ff-next-btn');
+    var progressLabel = document.getElementById('ff-progress-label');
+    var progressFill  = document.getElementById('ff-progress-fill');
+    var card          = document.getElementById('ff-card');
+    var resultEl      = document.getElementById('ff-result');
+    var resultScore   = document.getElementById('ff-result-score');
+    var resultMsg     = document.getElementById('ff-result-msg');
+    var restartBtn    = document.getElementById('ff-restart-btn');
+
+    function loadStatement() {
+      var s = statements[current];
+
+      feedbackWrap.style.display = 'none';
+      factBtn.disabled = false;
+      fictionBtn.disabled = false;
+      factBtn.className = '';
+      fictionBtn.className = '';
+
+      statementEl.style.opacity = 0;
+      statementEl.textContent = s.text;
+
+      progressLabel.textContent = (current + 1) + ' / ' + statements.length;
+      progressFill.style.width = ((current / statements.length) * 100) + '%';
+
+      setTimeout(function () { statementEl.style.opacity = 1; }, 50);
+    }
+
+    function answer(chosenFact) {
+      var s = statements[current];
+      var correct = (chosenFact === s.fact);
+      if (correct) score++;
+
+      factBtn.disabled = true;
+      fictionBtn.disabled = true;
+
+      if (s.fact) {
+        factBtn.className = 'ff-correct';
+        if (!correct) fictionBtn.className = 'ff-wrong';
+      } else {
+        fictionBtn.className = 'ff-correct';
+        if (!correct) factBtn.className = 'ff-wrong';
       }
 
-      function answer(chosenFact) {
-        var s = statements[current];
-        var correct = (chosenFact === s.fact);
-        if (correct) score++;
+      verdictEl.textContent = correct ? '✓ Correct!' : '✗ Not quite.';
+      verdictEl.className = correct ? 'ff-verdict-correct' : 'ff-verdict-wrong';
+      explanationEl.textContent = s.explanation;
+      feedbackWrap.style.display = 'block';
+    }
 
-        factBtn.disabled = true;
-        fictionBtn.disabled = true;
+    factBtn.addEventListener('click', function () { answer(true); });
+    fictionBtn.addEventListener('click', function () { answer(false); });
 
-        if (s.fact) {
-          factBtn.className = 'ff-correct';
-          if (!correct) fictionBtn.className = 'ff-wrong';
-        } else {
-          fictionBtn.className = 'ff-correct';
-          if (!correct) factBtn.className = 'ff-wrong';
-        }
-
-        verdictEl.textContent = correct ? '✓ Correct!' : '✗ Not quite.';
-        verdictEl.className = correct ? 'ff-verdict-correct' : 'ff-verdict-wrong';
-        explanationEl.textContent = s.explanation;
-        feedbackWrap.style.display = 'block';
-      }
-
-      factBtn.addEventListener('click', function () { answer(true); });
-      fictionBtn.addEventListener('click', function () { answer(false); });
-
-      nextBtn.addEventListener('click', function () {
-        current++;
-        if (current < statements.length) {
-          loadStatement();
-        } else {
-          progressFill.style.width = '100%';
-          card.style.display = 'none';
-          resultEl.style.display = 'block';
-
-          var pct = Math.round((score / statements.length) * 100);
-          resultScore.textContent = score + ' / ' + statements.length;
-          resultMsg.textContent =
-            pct === 100 ? 'Perfect — you clearly know your physics from your fiction.' :
-            pct >= 75   ? 'Impressive. The site has done its job.' :
-            pct >= 50   ? 'Not bad — a few more pages and you\'ll ace it.' :
-                          'Time to explore the case studies again!';
-        }
-      });
-
-      restartBtn.addEventListener('click', function () {
-        current = 0; score = 0;
-        card.style.display = 'block';
-        resultEl.style.display = 'none';
+    nextBtn.addEventListener('click', function () {
+      current++;
+      if (current < statements.length) {
         loadStatement();
-      });
+      } else {
+        progressFill.style.width = '100%';
+        card.style.display = 'none';
+        resultEl.style.display = 'block';
 
+        var pct = Math.round((score / statements.length) * 100);
+        resultScore.textContent = score + ' / ' + statements.length;
+        resultMsg.textContent =
+          pct === 100 ? 'Perfect — you clearly know your physics from your fiction.' :
+          pct >= 75   ? 'Impressive. The site has done its job.' :
+          pct >= 50   ? 'Not bad — a few more pages and you\'ll ace it.' :
+                        'Time to explore the case studies again!';
+      }
+    });
+
+    restartBtn.addEventListener('click', function () {
+      // NEW: re-pick a different random set of 8 each time
+      statements = pickRandomN(questionBank, 8);
+
+      current = 0;
+      score = 0;
+
+      card.style.display = 'block';
+      resultEl.style.display = 'none';
       loadStatement();
-    })();
-  </script>
+    });
+
+    loadStatement();
+  })();
+</script>
   <script src="js/effects.js"></script>
 </body>
 </html>
